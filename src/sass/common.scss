@@ -1,0 +1,8 @@
+#search_q {
+    height: 60px;
+}
+.text-decoration-hover {
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
