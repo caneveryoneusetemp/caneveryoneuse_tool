@@ -5,28 +5,14 @@
     {
       "name": "modal",
       "lighthouse": {
-        "lighthouse_score": "85",
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-          }
-        ]
+        "lighthouse_score": "100"
       },
       "manual_testing": {
         "errors": [
           {
             "error_type": "2.1.1 Keyboard",
-            "description": "Content is not scrollable with the keyboard and content gets cut off.",
-            "fix": "Make Content of Dialog focussable so it can be scrolled via keyboard.",
+            "description": "Content is not scrollable with the keyboard. Long content gets cut off.",
+            "fix": "Make content of dialog focussable so it can be scrolled via keyboard. Suggestion: Add ad tabindex='0'",
             "wcag": {
               "version": "2.2",
               "success_criteria": "https://www.w3.org/TR/WCAG22/#keyboard"
