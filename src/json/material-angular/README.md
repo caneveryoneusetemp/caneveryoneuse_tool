@@ -1,2 +1,2 @@
 # Angular Material
-- [Angular Material]([https://material.angular.io/] accessibility analysis JSON
+- [Angular Material](https://material.angular.io) accessibility analysis JSON
