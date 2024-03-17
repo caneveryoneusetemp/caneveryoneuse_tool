@@ -5,6 +5,7 @@
     "components": [
       {
         "name": "Modal",
+        "slug":"modal",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -17,6 +18,7 @@
       },
       {
         "name": "Dropdown",
+        "slug":"dropdown",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -29,6 +31,7 @@
       },
       {
         "name": "Carousel",
+        "slug":"carousel",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -51,6 +54,7 @@
       },
       {
         "name": "Accordion",
+        "slug":"accordion",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -63,6 +67,7 @@
       },
       {
         "name": "Input",
+        "slug":"input",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -75,6 +80,7 @@
       },
       {
         "name": "Switches",
+        "slug":"switches",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -87,6 +93,7 @@
       },
       {
         "name": "Table",
+        "slug":"table",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -99,6 +106,7 @@
       },
       {
         "name": "Tooltip",
+        "slug": "tooltip",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -111,6 +119,7 @@
       },
       {
         "name": "Alert",
+        "slug":"alert",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -123,6 +132,7 @@
       },
       {
         "name": "Form",
+        "slug":"form",
         "Axe": {
           "total_issues": 0,
           "errors": []
