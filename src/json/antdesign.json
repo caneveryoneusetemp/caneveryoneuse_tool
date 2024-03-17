@@ -30,7 +30,18 @@
         "errors": []
       },
       "manual_testing": {
-        "errors": []
+        "total_issues": 1,
+        "errors": [
+          {
+            "error_type": "2.4.3 Focus Order",
+            "description": "Cannot navigate to the dropdown using the tab key.",
+            "fix": "Replace <a> tag with <button> tag. Add trigger click event to open the dropdown.",
+            "wcag": {
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/TR/WCAG22/#focus-order"
+            }
+        }
+        ]
       },
       "preview_link": "https://ant.design/components/dropdown"
     },

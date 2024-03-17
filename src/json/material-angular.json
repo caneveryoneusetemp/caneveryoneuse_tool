@@ -1,5 +1,6 @@
 {
-  "name": "Name of framework",
+  "name": "Angular Material",
+  "slug": "angular-material",
   "version": "1.0.0",
   "components": [
     {
@@ -8,6 +9,7 @@
         "total_issues": 0
       },
       "manual_testing": {
+        "total_issues": 1,
         "errors": [
           {
             "error_type": "2.1.1 Keyboard",
@@ -28,6 +30,7 @@
         "total_issues": 0
       },
       "manual_testing": {
+        "total_issues": 4,
         "errors": [
           {
             "error_type": "4.1.2 Name, Role, Value",
@@ -68,6 +71,30 @@
         ]
       },
       "preview_link": "https://material.angular.io/components/select/examples"
+    },
+    {
+      "name": "Expansion Panel",
+      "Axe": {
+        "total_issues": 0
+      },
+      "manual_testing": {
+        "total_issues": 2,
+        "errors": [
+          {
+            "error_type": "TypeError",
+            "description": "",
+            "fix": "This is how to fix it",
+            "wcag": {
+              "version": "version",
+              "success_criteria": "success criteria"
+            }
+          },
+          {
+            "error_type": "ValueError"
+          }
+        ]
+      },
+      "preview_link": "https://material.angular.io/components/expansion/examples"
     }
   ]
 }
