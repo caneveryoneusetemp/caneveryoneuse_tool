@@ -30,8 +30,9 @@
         "total_issues": 0
       },
       "manual_testing": {
-        "total_issues": 4,
-        "errors": [
+        "total_issues": 0,
+        "errors": [],
+        "requirements": [
           {
             "error_type": "4.1.2 Name, Role, Value",
             "description": "Provide an accessible label for the select.",
@@ -77,24 +78,25 @@
       "Axe": {
         "total_issues": 0
       },
-      "manual_testing": {
-        "total_issues": 2,
+      "preview_link": "https://material.angular.io/components/expansion/examples"
+    },
+    {
+      "name": "Slider",
+      "Axe": {
+        "total_issues": 1,
         "errors": [
           {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
+            "error_type": "4.1.2 Name, Role, Value",
+            "description": "Provide an accessible label for the select.",
+            "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
             "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
             }
-          },
-          {
-            "error_type": "ValueError"
           }
         ]
       },
-      "preview_link": "https://material.angular.io/components/expansion/examples"
+      "preview_link": "https://material.angular.io/components/slider/examples"
     }
   ]
 }
