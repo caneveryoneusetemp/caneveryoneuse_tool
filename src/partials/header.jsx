@@ -11,6 +11,9 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="mainNavBar">
                         <ul className="navbar-nav ps-lg-4 mb-2 mb-lg-0 font-weight-bold">
+                        <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="/framework-overview"><strong>OVERVIEW</strong></a>
+                            </li>
                             <li className="nav-item">
                                 <a className="nav-link active" aria-current="page" href="https://caneveryoneuse.com/"><strong>ABOUT</strong></a>
                             </li>

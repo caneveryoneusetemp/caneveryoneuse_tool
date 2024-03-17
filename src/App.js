@@ -2,7 +2,7 @@ import React from "react";
 import Header from './partials/header';
 import Search from './partials/search';
 import Frameworks from './partials/frameworks';
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate, useLocation } from "react-router-dom";
 import Footer from './partials/footer';
 import Framework from './partials/framework';
 import FrameworkOverview from './partials/framework-overview';
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <Search />
+        <ConditionalSearch />
         <Routes>
           <Route path="/" element={<Frameworks />} />
           <Route path="/framework-overview" element={<FrameworkOverview />} />
@@ -23,6 +23,16 @@ function App() {
       </div>
     </BrowserRouter>
   );
+}
+
+function ConditionalSearch() {
+  let location = useLocation();
+  
+  if (location.pathname.includes('/framework-overview')) {
+    return null;
+  }
+  
+  return <Search />;
 }
 
 export default App;

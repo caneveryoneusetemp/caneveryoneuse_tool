@@ -29,7 +29,7 @@
             "preview_link": "https://mui.com/material-ui/react-dialog/"
         },
         {
-            "name": "Select",
+            "name": "Select/Dropdown",
             "slug": "select",
             "Axe": {
                 "total_issues": 0,
@@ -183,7 +183,7 @@
             "preview_link": "https://mui.com/material-ui/react-text-field/"
         },
         {
-            "name": "Toggle",
+            "name": "Toggle/Switch",
             "slug": "toggle",
             "Axe": {
                 "total_issues": 0,
@@ -208,7 +208,7 @@
             "preview_link": "https://mui.com/material-ui/react-toggle-button/"
         },
         {
-            "name": "Switch",
+            "name": "Toggle/Switch",
             "slug": "switch",
             "Axe": {
                 "total_issues": 0,
@@ -283,7 +283,7 @@
             "preview_link": "https://mui.com/material-ui/react-tooltip/"
         },
         {
-            "name": "Alert",
+            "name": "Alert/Notification",
             "slug": "alert",
             "Axe": {
                 "total_issues": 0,

@@ -16,7 +16,6 @@ const calculateTotalIssues = (component) => {
 };
 
 const getBackgroundClass = (issues) => {
-  if (issues === '-') return 'bg-muted';
   const count = parseInt(issues, 10);
   if (count === 0) return 'bg-success';
   if (count > 0 && count <= 2) return 'bg-warning';

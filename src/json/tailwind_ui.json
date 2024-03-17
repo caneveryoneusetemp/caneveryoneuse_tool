@@ -4,8 +4,8 @@
     "version": "December 20, 2023",
     "components": [
         {
-            "name": "Dialogs",
-            "slug": "dialogs",
+            "name": "Modal",
+            "slug": "modal",
             "Axe": {
                 "total_issues": 1,
                 "errors": [
@@ -23,8 +23,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/overlays/dialogs"
         },
         {
-            "name": "Dropdowns",
-            "slug": "dropdowns",
+            "name": "Select/Dropdown",
+            "slug": "dropdown",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -33,8 +33,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/elements/dropdowns"
         },
         {
-            "name": "Input Groups",
-            "slug": "input-groups",
+            "name": "Input",
+            "slug": "Input",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -43,8 +43,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/forms/input-groups"
         },
         {
-            "name": "Toggles",
-            "slug": "toggles",
+            "name": "Toggle/Switch",
+            "slug": "switch",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -53,8 +53,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/forms/toggles"
         },
         {
-            "name": "Tables",
-            "slug": "tables",
+            "name": "Table",
+            "slug": "table",
             "Axe": {
                 "total_issues": 26,
                 "errors": [
@@ -81,8 +81,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/lists/tables"
         },
         {
-            "name": "Alerts",
-            "slug": "alerts",
+            "name": "Alert/Notification",
+            "slug": "alert",
             "Axe": {
                 "total_issues": 5,
                 "errors": [
@@ -91,8 +91,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/feedback/alerts"
         },
         {
-            "name": "Form Layouts",
-            "slug": "form-layouts",
+            "name": "Form",
+            "slug": "form",
             "Axe": {
                 "total_issues": 6,
                 "errors": [
