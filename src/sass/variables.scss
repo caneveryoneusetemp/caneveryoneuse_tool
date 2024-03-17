@@ -6,11 +6,14 @@ $black: #000000;
 $white: #ffffff;
 $yellow:  #ffc107;
 $green:   #198754;
+$red: #FF5733;
 
 $primary: #4f309e;
-$secondary: $black;
+$secondary: $light-gray;
 $warning: $yellow;
 $success: $green;
+$danger: $red;
+$gray: #6c757d;
 
 $theme-colors: (
   primary: $primary,
@@ -18,7 +21,9 @@ $theme-colors: (
   dark: $black,
   light: $white,
   "warning": $warning,
-  "success": $success
+  "success": $success,
+  "danger": $danger,
+  "gray": $gray
 );
 
 $grid-breakpoints: (
