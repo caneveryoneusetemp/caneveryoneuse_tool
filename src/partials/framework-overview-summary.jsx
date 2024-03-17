@@ -55,7 +55,7 @@ const FrameworkOverviewSummary = () => {
 
   return (
     <div className="container">
-      <h2>Framework Summary Overview</h2>
+      <h2>Framework Summary</h2>
       <table className="table">
         <thead>
           <tr>
