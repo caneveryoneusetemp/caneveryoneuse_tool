@@ -90,7 +90,7 @@
                     {
                         "error_type": "Images must have alternate text",
                         "description": "All images must have alternate text to convey their purpose and meaning to screen reader users.",
-                        "fix": "",
+                        "fix": "Add an alt tag to every image",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Non-text Content"
@@ -99,7 +99,7 @@
                     {
                         "error_type": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
                         "description": "Lists must be marked up correctly, meaning they must not contain content elements other than li elements.",
-                        "fix": "",
+                        "fix": "wrap the two buttons with a list itme <li>",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Info and Relationships"
