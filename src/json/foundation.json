@@ -7,10 +7,7 @@
             "name": "Modal",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/mobile-ios-modal-iframe.html"
         },
@@ -18,10 +15,7 @@
             "name": "Dropdown",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/dropdown-animated-iframe.html"
         },
@@ -119,10 +113,7 @@
             "name": "input",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/show-password-iframe.html"
         },
@@ -130,10 +121,7 @@
             "name": "switch",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": ""
         },
@@ -141,10 +129,7 @@
             "name": "table",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
         },
@@ -152,10 +137,7 @@
             "name": "alert",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/alerts-fancy-iframe.html"
         },
@@ -163,10 +145,7 @@
             "name": "form",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/translucent-form-overlay-iframe.html"
         },
@@ -174,10 +153,7 @@
             "name": "list",
             "Axe": {
                 "total_issues": 0,
-                "errors": [
-                    {
-                    }
-                ]
+                "errors": []
             },
             "preview_link": "https://get.foundation/building-blocks/blocks/stats-list-iframe.html"
         }
