@@ -26,8 +26,6 @@ const Framework = () => {
 
     return(
         <div className="App">
-            <Header />
-            <Search />
             <SingleFramework framework={selectedFramework}  />
         </div>
     );
