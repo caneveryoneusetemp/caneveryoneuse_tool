@@ -1,5 +1,6 @@
 {
   "name": "Ant Design",
+  "slug":"ant-design",
   "version": "5.15.3",
   "components": [
     {
