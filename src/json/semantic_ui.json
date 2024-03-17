@@ -1,0 +1,110 @@
+{
+    "name": "Semantic UI",
+    "version": "2.5.0",
+    "components": [
+      {
+        "name": "Modal",
+        "Axe": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "manual_testing": {
+          "total_issues": 1,
+          "errors": [
+            {
+                "error_type": "2.4.3 Focus Order",
+                "description": "Cannot navigate to the modal using the tab key.",
+                "fix": "Add a tabindex to the modal.",
+                "wcag": {
+                  "version": "2.2",
+                  "success_criteria": "https://www.w3.org/TR/WCAG22/#focus-order"
+                }
+            }
+          ]
+        },
+        "preview_link": "https://getbootstrap.com/docs/5.3/components/modal/#modal-components"
+      },
+      {
+        "name": "Dropdown",
+        "Axe": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "manual_testing": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "preview_link": "https://semantic-ui.com/modules/dropdown.html#/definition"
+      },
+      {
+        "name": "Accordion",
+        "Axe": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "manual_testing": {
+          "total_issues": 1,
+          "errors": [
+            {
+                "error_type": "2.4.3 Focus Order",
+                "description": "Cannot navigate to the accordion using the tab key.",
+                "fix": "Add a tabindex to the accordion.",
+                "wcag": {
+                  "version": "2.2",
+                  "success_criteria": "https://www.w3.org/TR/WCAG22/#focus-order"
+                }
+            } 
+          ]
+        },
+        "preview_link": "https://getbootstrap.com/docs/5.3/components/modal/#modal-components"
+      },
+      {
+        "name": "Input",
+        "Axe": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "manual_testing": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "preview_link": "https://semantic-ui.com/elements/input.html"
+      },
+      {
+        "name": "Table",
+        "Axe": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "manual_testing": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "preview_link": "https://semantic-ui.com/collections/table.html"
+      },
+      {
+        "name": "Form",
+        "Axe": {
+          "total_issues": 1,
+          "errors": [
+            {
+              "error_type": "1.3.1 Info and Relationships",
+              "description": "Form element does not have a label.",
+              "fix": "Add a label to the form element.",
+              "wcag": {
+                "version": "2.2",
+                "success_criteria": "https://www.w3.org/TR/WCAG22/#info-and-relationships"
+              }
+            }
+          ]
+        },
+        "manual_testing": {
+          "total_issues": 0,
+          "errors": []
+        },
+        "preview_link": "https://semantic-ui.com/collections/table.html"
+      }
+    ]
+  }
+  
+  
