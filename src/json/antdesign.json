@@ -5,6 +5,7 @@
   "components": [
     {
       "name": "Modal",
+      "slug":"modal",
       "Axe": {
         "total_issues": 1,
         "errors": [],
@@ -29,6 +30,7 @@
     },
     {
       "name": "Dropdown",
+      "slug":"dropdown",
       "Axe": {
         "total_issues": 0,
         "errors": [],
@@ -53,6 +55,7 @@
     },
     {
       "name": "Collapse",
+      "slug":"collapse",
       "Axe": {
         "total_issues": 0,
         "errors": [],
@@ -67,6 +70,7 @@
     },
     {
       "name": "Carousel",
+      "slug":"carousel",
       "Axe": {
         "total_issues": 0,
         "errors": [],
@@ -81,6 +85,7 @@
     },
     {
       "name": "Slider",
+      "slug":"slider",
       "Axe": {
         "total_issues": 2,
         "errors": [],
@@ -114,6 +119,7 @@
     },
     {
       "name": "Input",
+      "slug":"input",
       "Axe": {
         "total_issues": 0,
         "errors": [],
@@ -128,6 +134,7 @@
     },
     {
       "name": "Switch",
+      "slug":"switch",
       "Axe": {
         "total_issues": 1,
         "errors": [],
@@ -152,6 +159,7 @@
     },
     {
       "name": "Table",
+      "slug":"table",
       "Axe": {
         "total_issues": 1,
         "errors": [],
@@ -176,6 +184,7 @@
     },
     {
       "name": "Tooltip",
+      "slug":"tooltip",
       "Axe": {
         "total_issues": 0,
         "errors": [],
@@ -190,6 +199,7 @@
     },
     {
       "name": "Alert",
+      "slug":"alert",
       "Axe": {
         "total_issues": 0,
         "errors": [],
@@ -204,6 +214,7 @@
     },
     {
       "name": "AutoComplete",
+      "slug":"autocomplete",
       "Axe": {
         "total_issues": 1,
         "errors": [],
@@ -228,6 +239,7 @@
     },
     {
       "name": "Form",
+      "slug":"form",
       "Axe": {
         "total_issues": 1,
         "errors": [],
