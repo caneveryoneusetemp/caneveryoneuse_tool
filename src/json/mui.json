@@ -121,12 +121,12 @@
             "name": "Input",
             "slug": "input",
             "Axe": {
-                "total_issues": 2,
+                "total_issues": 0,
                 "errors": [],
                 "requirements": []
             },
             "manual_testing": {
-                "total_issues": 0,
+                "total_issues": 2,
                 "errors": [],
                 "requirements": [
                     {
@@ -140,7 +140,7 @@
                     },
                     {
                         "error_type": "3.3.2 Labels or Instructions",
-                        "description": "It is helpful to provide instructions and labels for how to fill in an input.",
+                        "description": "It is helpful to provide instructions and labels for how to fill in an input and which format is .",
                         "fix": "Add the aria-label=\"...\" label to all required fields.",
                         "wcag": {
                             "version": "2.2",
@@ -235,9 +235,19 @@
                 "requirements": []
             },
             "manual_testing": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "A tooltip needs accessible labels describing any interactions.",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "preview_link": "https://mui.com/material-ui/react-tooltip/"
         },
@@ -265,9 +275,19 @@
                 "requirements": []
             },
             "manual_testing": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "An autocompleting element needs accessible labels describing any interactions.",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "preview_link": "https://mui.com/material-ui/react-autocomplete/"
         },
@@ -280,9 +300,19 @@
                 "requirements": []
             },
             "manual_testing": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "List elements needs accessible labels describing their meaning.",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "preview_link": "https://mui.com/material-ui/react-list/"
         },
@@ -290,14 +320,34 @@
             "name": "Datepicker",
             "slug": "datepicker",
             "Axe": {
-                "total_issues": 0,
-                "errors": [],
+                "total_issues": 1,
+                "errors": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "The Datepickers element's accessible name is missing.",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ],
                 "requirements": []
             },
             "manual_testing": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "Datepicker elements needs accessible labels describing how they are used and what formats are expected in the input.",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "preview_link": "https://mui.com/x/react-date-pickers/"
         }
