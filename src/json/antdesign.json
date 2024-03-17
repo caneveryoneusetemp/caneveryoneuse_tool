@@ -3,27 +3,24 @@
   "version": "5.15.3",
   "components": [
     {
-      "name": "example_component",
+      "name": "Modal",
       "Axe": {
         "errors": [
           {
             "error_type": "TypeError",
-            "description": "",
+            "description": "Elements must meet minimum color contrast ratio thresholds",
             "fix": "This is how to fix it",
             "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/TR/WCAG22/#contrast-minimum"
             }
-          },
-          {
-            "error_type": "ValueError"
           }
         ]
       },
       "manual_testing": {
         "errors": []
       },
-      "preview_link": "https://mui.com/material-ui/react-dialog/"
+      "preview_link": "https://ant.design/components/modal"
     }
   ]
 }
