@@ -4,8 +4,7 @@
   "components": [
     {
       "name": "example_component",
-      "lighthouse": {
-        "lighthouse_score": "85",
+      "Axe": {
         "errors": [
           {
             "error_type": "TypeError",
