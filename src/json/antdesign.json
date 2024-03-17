@@ -5,6 +5,7 @@
     {
       "name": "Modal",
       "Axe": {
+        "total_issues": 1,
         "errors": [
           {
             "error_type": "Elements must meet minimum color contrast ratio thresholds",
@@ -21,6 +22,122 @@
         "errors": []
       },
       "preview_link": "https://ant.design/components/modal"
+    },
+    {
+      "name": "Dropdown",
+      "Axe": {
+        "total_issues": 0,
+        "errors": []
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/dropdown"
+    },
+    {
+      "name": "Collapse",
+      "Axe": {
+        "total_issues": 0,
+        "errors": []
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/collapse"
+    },
+    {
+      "name": "Carousel",
+      "Axe": {
+        "total_issues": 0,
+        "errors": []
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/carousel"
+    },
+    {
+      "name": "Slider",
+      "Axe": {
+        "total_issues": 2,
+        "errors": [
+          {
+            "error_type": "ARIA input fields must have an accessible name",
+            "description": "Ensures every ARIA input field has an accessible name.",
+            "fix": "Add an accessible name to the input field using the aria-label or aria-labelledby attribute.",
+            "wcag": {
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/TR/WCAG22/#name-role-value"
+            }
+          },
+          {
+            "error_type": "Buttons must have discernible text",
+            "description": "Buttons must have discernible text that clearly describes the destination, purpose, function, or action for screen reader users.The input-button-name rule separates functionality from the button-name rule to ensure that input buttons have discernible text; advise relevant to input button names was incorrect for button elements.",
+            "fix": "Add discernible text to the button element.",
+            "wcag": {
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/TR/WCAG22/#name-role-value"
+            }
+          }
+        ]
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/slider"
+    },
+    {
+      "name": "Input",
+      "Axe": {
+        "total_issues": 0,
+        "errors": []
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/input"
+    },
+    {
+      "name": "Switch",
+      "Axe": {
+        "total_issues": 1,
+        "errors": [
+          {
+            "error_type": "Buttons must have discernible text",
+            "description": "Buttons must have discernible text that clearly describes the destination, purpose, function, or action for screen reader users.The input-button-name rule separates functionality from the button-name rule to ensure that input buttons have discernible text; advise relevant to input button names was incorrect for button elements.",
+            "fix": "Add discernible text to the button element.",
+            "wcag": {
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/TR/WCAG22/#name-role-value"
+            }
+          }
+        ]
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/switch"
+    },
+    {
+      "name": "Table",
+      "Axe": {
+        "total_issues": 1,
+        "errors": [
+          {
+            "error_type": "Elements must meet minimum color contrast ratio thresholds",
+            "description": "All text elements must have sufficient contrast between text in the foreground and background colors behind it in accordance with WCAG 2 AA contrast ratio thresholds.",
+            "fix": "Ensure that text has a contrast ratio of at least 4.5:1.",
+            "wcag": {
+              "version": "2.2",
+              "success_criteria": "https://www.w3.org/TR/WCAG22/#contrast-minimum"
+            }
+          }
+        ]
+      },
+      "manual_testing": {
+        "errors": []
+      },
+      "preview_link": "https://ant.design/components/table"
     }
   ]
 }
