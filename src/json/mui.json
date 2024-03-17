@@ -128,7 +128,17 @@
             "Axe": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "It is recommended that each slider element has the aria-valuenow, aria-valuemin, aria-valuemax property set to a value representing the current value of the slider.",
+                        "fix": "Can be done by adding aria-valuenow, aria-valuemin, aria-valuemax properties",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "manual_testing": {
                 "total_issues": 0,
