@@ -7,7 +7,8 @@
       "name": "Modal",
       "Axe": {
         "total_issues": 1,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "Elements must meet minimum color contrast ratio thresholds",
             "description": "All text elements must have sufficient contrast between text in the foreground and background colors behind it in accordance with WCAG 2 AA contrast ratio thresholds.",
@@ -21,7 +22,8 @@
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/modal"
     },
@@ -29,11 +31,13 @@
       "name": "Dropdown",
       "Axe": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "manual_testing": {
         "total_issues": 1,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "2.4.3 Focus Order",
             "description": "Cannot navigate to the dropdown using the tab key.",
@@ -42,7 +46,7 @@
               "version": "2.2",
               "success_criteria": "https://www.w3.org/TR/WCAG22/#focus-order"
             }
-        }
+          }
         ]
       },
       "preview_link": "https://ant.design/components/dropdown"
@@ -51,11 +55,13 @@
       "name": "Collapse",
       "Axe": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/collapse"
     },
@@ -63,11 +69,13 @@
       "name": "Carousel",
       "Axe": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/carousel"
     },
@@ -75,7 +83,8 @@
       "name": "Slider",
       "Axe": {
         "total_issues": 2,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "ARIA input fields must have an accessible name",
             "description": "Ensures every ARIA input field has an accessible name.",
@@ -98,7 +107,8 @@
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/slider"
     },
@@ -106,11 +116,13 @@
       "name": "Input",
       "Axe": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/input"
     },
@@ -118,7 +130,8 @@
       "name": "Switch",
       "Axe": {
         "total_issues": 1,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "Buttons must have discernible text",
             "description": "Buttons must have discernible text that clearly describes the destination, purpose, function, or action for screen reader users.The input-button-name rule separates functionality from the button-name rule to ensure that input buttons have discernible text; advise relevant to input button names was incorrect for button elements.",
@@ -132,7 +145,8 @@
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/switch"
     },
@@ -140,7 +154,8 @@
       "name": "Table",
       "Axe": {
         "total_issues": 1,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "Elements must meet minimum color contrast ratio thresholds",
             "description": "All text elements must have sufficient contrast between text in the foreground and background colors behind it in accordance with WCAG 2 AA contrast ratio thresholds.",
@@ -154,7 +169,8 @@
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/table"
     },
@@ -162,11 +178,13 @@
       "name": "Tooltip",
       "Axe": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/tooltip"
     },
@@ -174,11 +192,13 @@
       "name": "Alert",
       "Axe": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/alert"
     },
@@ -186,7 +206,8 @@
       "name": "AutoComplete",
       "Axe": {
         "total_issues": 1,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "Form elements must have labels",
             "description": "Each form element must have a programmatically associated label element.",
@@ -200,7 +221,8 @@
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/auto-complete"
     },
@@ -208,7 +230,8 @@
       "name": "Form",
       "Axe": {
         "total_issues": 1,
-        "errors": [
+        "errors": [],
+        "requirements": [
           {
             "error_type": "Elements must meet minimum color contrast ratio thresholds",
             "description": "All text elements must have sufficient contrast between text in the foreground and background colors behind it in accordance with WCAG 2 AA contrast ratio thresholds.",
@@ -222,7 +245,8 @@
       },
       "manual_testing": {
         "total_issues": 0,
-        "errors": []
+        "errors": [],
+        "requirements": []
       },
       "preview_link": "https://ant.design/components/form"
     }
