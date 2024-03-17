@@ -115,7 +115,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/testimonial-slider-iframe.html"
         },
         {
-            "name": "input",
+            "name": "Input",
             "slug": "input",
             "Axe": {
                 "total_issues": 0,
@@ -124,7 +124,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/show-password-iframe.html"
         },
         {
-            "name": "switch",
+            "name": "Toggle/Switch",
             "slug": "switch",
             "Axe": {
                 "total_issues": 0,
@@ -133,7 +133,7 @@
             "preview_link": ""
         },
         {
-            "name": "table",
+            "name": "Tabelle",
             "slug": "table",
             "Axe": {
                 "total_issues": 0,
@@ -142,7 +142,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
         },
         {
-            "name": "alert",
+            "name": "Alert / Notification",
             "slug": "alert",
             "Axe": {
                 "total_issues": 0,
@@ -151,7 +151,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/alerts-fancy-iframe.html"
         },
         {
-            "name": "form",
+            "name": "Form",
             "slug": "form",
             "Axe": {
                 "total_issues": 0,
@@ -160,7 +160,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/translucent-form-overlay-iframe.html"
         },
         {
-            "name": "list",
+            "name": "Ordered / unordered List",
             "slug": "list",
             "Axe": {
                 "total_issues": 0,
