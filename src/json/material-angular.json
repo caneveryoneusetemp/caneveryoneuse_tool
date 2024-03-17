@@ -1,5 +1,6 @@
 {
   "name": "Angular Material",
+  "slug": "angular-material",
   "version": "1.0.0",
   "components": [
     {
