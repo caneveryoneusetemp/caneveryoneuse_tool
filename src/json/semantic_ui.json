@@ -5,6 +5,7 @@
     "components": [
       {
         "name": "Modal",
+        "slug":"modal",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -27,6 +28,7 @@
       },
       {
         "name": "Select/Dropdown",
+        "slug":"dropdown",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -39,6 +41,7 @@
       },
       {
         "name": "Accordion",
+        "slug":"accordion",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -61,6 +64,7 @@
       },
       {
         "name": "Input",
+        "slug":"input",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -73,6 +77,7 @@
       },
       {
         "name": "Table",
+        "slug":"table",
         "Axe": {
           "total_issues": 0,
           "errors": []
@@ -85,6 +90,7 @@
       },
       {
         "name": "Form",
+        "slug":"form",
         "Axe": {
           "total_issues": 1,
           "errors": [

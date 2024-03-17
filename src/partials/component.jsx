@@ -26,6 +26,16 @@ const Component = (props) => {
         return count;
     }
 
+    const isValidUrl = urlString=> {
+        let urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // validate domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // validate OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // validate port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // validate query string
+        '(\\#[-a-z\\d_]*)?$','i'); // validate fragment locator
+        return !!urlPattern.test(urlString);
+    }
+
     useEffect(() => { 
 
         const errorCount = calculateErrors(selectedComponent);
@@ -43,7 +53,7 @@ const Component = (props) => {
 
         if ( selectedComponent.Axe ) {
 
-            if ( selectedComponent.Axe?.errors.length > 0 ) {
+            if ( selectedComponent.Axe.errors && selectedComponent.Axe.errors.length > 0 ) {
                 allErrors = allErrors.concat( selectedComponent.Axe.errors );
             }
 
@@ -138,6 +148,42 @@ const Component = (props) => {
                                                         <span>{error.fix}</span>
                                                     </div>
                                                 </div>
+                                                {error.wcag &&
+                                                    <div className="row mb-2">
+                                                        <div className="col-4">
+                                                            <span>WCAG Compliance information </span>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            {error.wcag.version &&
+                                                                <div className="row">
+                                                                    <div className="col-3">
+                                                                        <span>Version: </span>
+                                                                    </div>
+                                                                    <div className="col-9">
+                                                                        <span>{error.wcag.version}</span>
+                                                                    </div>
+                                                                </div>
+                                                            }
+
+                                                            {error.wcag.success_criteria &&
+                                                                <div className="row">
+                                                                    <div className="col-3">
+                                                                        <span>Success Criteria </span>
+                                                                    </div>
+                                                                    <div className="col-9">
+                                                                        { isValidUrl( error.wcag.success_criteria ) 
+                                                                            ?  <a href={error.wcag.success_criteria} target="_blank" rel="noreferrer">{error.wcag.success_criteria}</a>
+                                                                            : <span>{error.wcag.success_criteria}</span>
+                                                                        }
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                            }
+                                                            
+                                                        </div>
+                                                    </div>
+                                                }
+                                                
                                             </div>
                                         );
                                     })}
@@ -180,6 +226,41 @@ const Component = (props) => {
                                                         <span>{requirement.fix}</span>
                                                     </div>
                                                 </div>
+                                                {requirement.wcag &&
+                                                    <div className="row mb-2">
+                                                        <div className="col-4">
+                                                            <span>WCAG Compliance information </span>
+                                                        </div>
+                                                        <div className="col-8">
+                                                            {requirement.wcag.version &&
+                                                                <div className="row">
+                                                                    <div className="col-3">
+                                                                        <span>Version: </span>
+                                                                    </div>
+                                                                    <div className="col-9">
+                                                                        <span>{requirement.wcag.version}</span>
+                                                                    </div>
+                                                                </div>
+                                                            }
+
+                                                            {requirement.wcag.success_criteria &&
+                                                                <div className="row">
+                                                                    <div className="col-3">
+                                                                        <span>Success Criteria </span>
+                                                                    </div>
+                                                                    <div className="col-9">
+                                                                        { isValidUrl( requirement.wcag.success_criteria ) 
+                                                                            ?  <a href={requirement.wcag.success_criteria} target="_blank" rel="noreferrer">{requirement.wcag.success_criteria}</a>
+                                                                            : <span>{requirement.wcag.success_criteria}</span>
+                                                                        }
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                            }
+                                                            
+                                                        </div>
+                                                    </div>
+                                                }
                                             </div>
                                         );
                                     })}
