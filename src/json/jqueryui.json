@@ -1,5 +1,6 @@
 {
     "name": "jQuery UI",
+    "slug":"jquery-ui",
     "version": "1.13.2",
     "components": [
         {
