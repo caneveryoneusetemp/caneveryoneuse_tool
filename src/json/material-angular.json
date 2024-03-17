@@ -1,180 +1,245 @@
 {
-  "name": "Angular Material",
-  "slug": "angular-material",
-  "version": "1.0.0",
-  "components": [
-    {
-      "name": "dialog",
-      "slug":"dialog",
-      "Axe": {
-        "total_issues": 0
-      },
-      "manual_testing": {
-        "total_issues": 1,
-        "errors": [
-          {
-            "error_type": "2.1.1 Keyboard",
-            "description": "Content is not scrollable with the keyboard. Long content gets cut off.",
-            "fix": "Make content of dialog focussable so it can be scrolled via keyboard. Suggestion: Add ad tabindex='0'",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/TR/WCAG22/#keyboard"
-            }
-          }
-        ]
-      },
-      "preview_link": "https://material.angular.io/components/dialog/examples"
-    },
-    {
-      "name": "select",
-      "slug":"select",
-      "Axe": {
-        "total_issues": 0
-      },
-      "manual_testing": {
-        "total_issues": 0,
-        "errors": [],
-        "requirements": [
-          {
-            "error_type": "4.1.2 Name, Role, Value",
-            "description": "Provide an accessible label for the select.",
-            "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
-            }
-          },
-          {
-            "error_type": "3.3.1 Error Identification",
-            "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
-            "fix": "Error messages can be shown under the form field underline by adding mat-error elements inside the form field. You can associate an error with a text input field using aria-describedby.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/TR/WCAG22/#error-identification"
-            }
-          },
-          {
-            "error_type": "3.3.2 Labels or Instructions",
-            "description": "Provide labels to make it clear what the user should select and optionally provide extra hints to help them avoid errors.",
-            "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html"
-            }
-          },
-          {
-            "error_type": "3.3.3 Error Suggestion",
-            "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
-            "fix": "Associate the error message with the field using aria-describedby. You can notify the users about the issue by using ARIA live regions.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/TR/WCAG22/#error-suggestion"
-            }
-          }
-        ]
-      },
-      "preview_link": "https://material.angular.io/components/select/examples"
-    },
-    {
-      "name": "Expansion Panel",
-      "slug":"expansion-panel",
-      "Axe": {
-        "total_issues": 0
-      },
-      "preview_link": "https://material.angular.io/components/expansion/examples"
-    },
-    {
-      "name": "Slider",
-      "slug":"slider",
-      "Axe": {
-        "total_issues": 1,
-        "errors": [
-          {
-            "error_type": "4.1.2 Name, Role, Value",
-            "description": "Provide an accessible label for the slider.",
-            "fix": "Input can be labelled using aria-label or aria-labelledby.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
-            }
-          }
-        ]
-      },
-      "preview_link": "https://material.angular.io/components/slider/examples"
-    },
-    {
-      "name": "Input",
-      "slug":"input",
-      "Axe": {
-        "total_issues": 0,
-        "errors": []
-      },
-      "manual_testing": {
-        "total_issues": 0,
-        "errors": [],
-        "requirements": [
-          {
-            "error_type": "4.1.2 Name, Role, Value",
-            "description": "Provide an accessible label for the select.",
-            "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
-            }
-          },
-          {
-            "error_type": "3.3.1 Error Identification",
-            "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
-            "fix": "Error messages can be shown under the form field underline by adding mat-error elements inside the form field. You can associate an error with a text input field using aria-describedby.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/TR/WCAG22/#error-identification"
-            }
-          },
-          {
-            "error_type": "3.3.2 Labels or Instructions",
-            "description": "Provide labels to make it clear what the user should select and optionally provide extra hints to help them avoid errors.",
-            "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html"
-            }
-          },
-          {
-            "error_type": "3.3.3 Error Suggestion",
-            "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
-            "fix": "Associate the error message with the field using aria-describedby. You can notify the users about the issue by using ARIA live regions.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/TR/WCAG22/#error-suggestion"
-            }
-          }
-        ]
-      },
-      "preview_link": "https://material.angular.io/components/input/examples"
-    },
-    {
-      "name": "Slide toggle",
-      "slug":"slide-toggle",
-      "Axe": {
-        "total_issues": 0
-      },
-      "manual_testing": {
-        "total_issues": 0,
-        "errors": [],
-        "requirements": [
-          {
-            "error_type": "4.1.2 Name, Role, Value",
-            "description": "Provide an accessible label for the toggle.",
-            "fix": "Can be done by using the aria-label attribute or the aria-labelledby attribute.",
-            "wcag": {
-              "version": "2.2",
-              "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
-            }
-          }
-        ]
-      },
-      "preview_link": "https://material.angular.io/components/dialog/examples"
-    }
-  ]
+    "name": "Angular Material",
+    "slug": "angular-material",
+    "version": "1.0.0",
+    "components": [
+        {
+            "name": "dialog",
+            "slug": "dialog",
+            "Axe": {
+                "total_issues": 0
+            },
+            "manual_testing": {
+                "total_issues": 1,
+                "errors": [
+                    {
+                        "error_type": "2.1.1 Keyboard",
+                        "description": "Content is not scrollable with the keyboard. Long content gets cut off.",
+                        "fix": "Make content of dialog focussable so it can be scrolled via keyboard. Suggestion: Add ad tabindex='0'",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#keyboard"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://material.angular.io/components/dialog/examples"
+        },
+        {
+            "name": "select",
+            "slug": "select",
+            "Axe": {
+                "total_issues": 0
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": [],
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "Provide an accessible label for the select.",
+                        "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.1 Error Identification",
+                        "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
+                        "fix": "Error messages can be shown under the form field underline by adding mat-error elements inside the form field. You can associate an error with a text input field using aria-describedby.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#error-identification"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "Provide labels to make it clear what the user should select and optionally provide extra hints to help them avoid errors.",
+                        "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.3 Error Suggestion",
+                        "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
+                        "fix": "Associate the error message with the field using aria-describedby. You can notify the users about the issue by using ARIA live regions.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#error-suggestion"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://material.angular.io/components/select/examples"
+        },
+        {
+            "name": "Expansion Panel",
+            "slug": "expansion-panel",
+            "Axe": {
+                "total_issues": 0
+            },
+            "preview_link": "https://material.angular.io/components/expansion/examples"
+        },
+        {
+            "name": "Slider",
+            "slug": "slider",
+            "Axe": {
+                "total_issues": 1,
+                "errors": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "Provide an accessible label for the slider.",
+                        "fix": "Input can be labelled using aria-label or aria-labelledby.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://material.angular.io/components/slider/examples"
+        },
+        {
+            "name": "Input",
+            "slug": "input",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": [],
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "Provide an accessible label for the select.",
+                        "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.1 Error Identification",
+                        "description": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
+                        "fix": "Error messages can be shown under the form field underline by adding mat-error elements inside the form field. You can associate an error with a text input field using aria-describedby.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#error-identification"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "Provide labels to make it clear what the user should select and optionally provide extra hints to help them avoid errors.",
+                        "fix": "Can be done by adding a <mat-label> inside of <mat-form-field>, the aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions.html"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.3 Error Suggestion",
+                        "description": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
+                        "fix": "Associate the error message with the field using aria-describedby. You can notify the users about the issue by using ARIA live regions.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#error-suggestion"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://material.angular.io/components/input/examples"
+        },
+        {
+            "name": "Slide toggle",
+            "slug": "slide-toggle",
+            "Axe": {
+                "total_issues": 0
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": [],
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "Provide an accessible label for the toggle.",
+                        "fix": "Can be done by using the aria-label attribute or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://material.angular.io/components/dialog/examples"
+        },
+        {
+            "name": "Table",
+            "slug": "table",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://material.angular.io/components/table/overview"
+        },
+        {
+            "name": "Tooltip",
+            "slug": "tooltip",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://material.angular.io/components/tooltip/overview"
+        },
+        {
+            "name": "Snackbar",
+            "slug": "snack-bar",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://material.angular.io/components/snack-bar/overview"
+        },
+        {
+            "name": "Autocomplete",
+            "slug": "autocomplete",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://material.angular.io/components/autocomplete/overview"
+        },
+        {
+            "name": "Form field",
+            "slug": "form-field",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://material.angular.io/components/form-field/overview"
+        }
+    ]
 }
