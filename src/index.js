@@ -13,8 +13,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/:framework/:component?" element={<Framework />} />
         <Route path="/framework-overview" element={<FrameworkOverview />} />
+        <Route path="/:framework/:component?" element={<Framework />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
