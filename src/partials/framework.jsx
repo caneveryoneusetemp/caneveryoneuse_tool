@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Header from './header';
-import Search from './search';
 import { useParams } from 'react-router-dom';
 import SingleFramework from './single-framework';
 import frameworkData from '../json';
@@ -26,7 +24,7 @@ const Framework = () => {
 
     return(
         <div className="App">
-            <SingleFramework framework={selectedFramework}  />
+            <SingleFramework selectedFramework={selectedFramework}  />
         </div>
     );
 }
