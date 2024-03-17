@@ -1,16 +1,17 @@
 import React from 'react';
 import Component from './component';
+import { Link } from "react-router-dom";
 
 const SingleFramework = (props) => {
 
-    const { framework, onSelect} = props;
+    const { framework } = props;
 
     return(
-        <>
+        <div className="container">
             <div className="row">
                 <div className="col-12 my-5">
                     <div className="mb-4">
-                        <span className="pointer text-decoration-hover go-back" onClick={() => onSelect({})}>Back</span>
+                        <Link to="/">Go back</Link>
                     </div>
                     <h2>{framework.name}</h2>
                 </div>
@@ -26,7 +27,7 @@ const SingleFramework = (props) => {
                     </>
                 }
             </div>
-        </>
+        </div>
     );
 
 }

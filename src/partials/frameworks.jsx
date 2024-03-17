@@ -1,20 +1,14 @@
-import React,  {useState} from 'react';
+import React from 'react';
 import frameworkData from '../json';
-import SingleFramework from './single-framework';
+// import SingleFramework from './single-framework';
+import { Link } from "react-router-dom";
 
 const Frameworks = () => {
-
-    const [selectedFramework, setSelectedFramework] = useState({});
-
-    const handleFrameworkSelect = ( item ) => {
-        setSelectedFramework(item);
-    }
 
     return(
         <div className="container">
 
-            {(!selectedFramework || ( selectedFramework && Object.keys(selectedFramework).length === 0)) &&
-                <div className="row">
+            <div className="row">
                     <div className="col-12 mt-5">
                         <h2>Frameworks</h2>
 
@@ -22,18 +16,19 @@ const Frameworks = () => {
                             <ul className="frameworks-list">
                                 {frameworkData.map( (framework, i) => {
                                     return (
-                                        <li key={i} onClick={() => setSelectedFramework(framework)} className="pointer text-decoration-hover">{framework.name}</li>
+                                        <li key={i}>
+                                            <Link to={`/${framework.slug}`} className="text-dark">{framework.name}</Link>
+                                        </li>
                                     );
                                 })}
                             </ul>
                         }
                     </div>
                 </div>
-            }
 
-            { selectedFramework && Object.keys(selectedFramework).length !== 0 &&
+            {/* { selectedFramework && Object.keys(selectedFramework).length !== 0 &&
                 <SingleFramework framework={selectedFramework} onSelect={(data) => handleFrameworkSelect(data)} />
-            }
+            } */}
             
         </div>
     );

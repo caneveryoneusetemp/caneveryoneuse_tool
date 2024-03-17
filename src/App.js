@@ -1,4 +1,3 @@
-import './sass/main.scss';
 import Header from './partials/header';
 import Search from './partials/search';
 import Frameworks from './partials/frameworks';
