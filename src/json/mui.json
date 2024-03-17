@@ -11,7 +11,7 @@
                 "errors": [
                     {
                         "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
+                        "description": "If the field is required it needs aria-required=\"true\" label.",
                         "fix": "Add the aria-required=\"true\" label to all required fields",
                         "wcag": {
                             "version": "2.2",
@@ -39,17 +39,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-select/"
         },
@@ -64,17 +54,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-accordion/"
         },
@@ -87,8 +67,8 @@
                 "requirements": [
                     {
                         "error_type": "1.4.1 Use of Color",
-                        "description": "The stepper-dots element progress is shown using changing colors",
-                        "fix": "Include a text cue in the labels as the progress changes",
+                        "description": "The stepper-dots element progress is shown using changing colors.",
+                        "fix": "Include a text cue in the labels as the progress changes.",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color"
@@ -96,7 +76,7 @@
                     },
                     {
                         "error_type": "4.1.2 Name, Role, Value",
-                        "description": "The stepper-dots element's accessible name is missing",
+                        "description": "The stepper-dots element's accessible name is missing.",
                         "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
                         "wcag": {
                             "version": "2.2",
@@ -108,17 +88,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-stepper/#text-with-carousel-effect"
         },
@@ -132,7 +102,7 @@
                     {
                         "error_type": "4.1.2 Name, Role, Value",
                         "description": "It is recommended that each slider element has the aria-valuenow, aria-valuemin, aria-valuemax property set to a value representing the current value of the slider.",
-                        "fix": "Can be done by adding aria-valuenow, aria-valuemin, aria-valuemax properties",
+                        "fix": "Can be done by adding aria-valuenow, aria-valuemin, aria-valuemax properties.",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
@@ -143,17 +113,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-slider/"
         },
@@ -171,8 +131,17 @@
                 "requirements": [
                     {
                         "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
+                        "description": "If the field is required it needs aria-required=\"true\" label.",
+                        "fix": "Add the aria-required=\"true\" label to all required fields.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+                        }
+                    },
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "It is helpful to provide instructions and labels for how to fill in an input.",
+                        "fix": "Add the aria-label=\"...\" label to all required fields.",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
@@ -193,17 +162,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-toggle-button/"
         },
@@ -218,17 +177,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-switch/"
         },
@@ -238,22 +187,22 @@
             "Axe": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "A table needs accessible labels describing the content and interactions.",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-table/"
         },
@@ -268,17 +217,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-tooltip/"
         },
@@ -293,17 +232,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-alert/"
         },
@@ -318,17 +247,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-autocomplete/"
         },
@@ -343,17 +262,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-list/"
         },
@@ -368,17 +277,7 @@
             "manual_testing": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": [
-                    {
-                        "error_type": "3.3.2 Labels or Instructions",
-                        "description": "The field is required but is missing aria-required=\"true\"",
-                        "fix": "Add the aria-required=\"true\" label to all required fields",
-                        "wcag": {
-                            "version": "2.2",
-                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
-                        }
-                    }
-                ]
+                "requirements": []
             },
             "preview_link": "https://mui.com/x/react-date-pickers/"
         }
