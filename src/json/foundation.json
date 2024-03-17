@@ -1,5 +1,6 @@
 {
     "name": "Foundation",
+    "slug":"foundation",
     "version": "6.8.1",
     "components": [
         {
