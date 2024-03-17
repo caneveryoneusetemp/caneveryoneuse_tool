@@ -1,5 +1,5 @@
 {
-    "name": "MUI - React Material UI components",
+    "name": "React Material UI",
     "slug": "react-mui",
     "version": "5.15.13",
     "components": [
@@ -62,7 +62,7 @@
             "name": "Carousel",
             "slug": "carousel",
             "Axe": {
-                "total_issues": 0,
+                "total_issues": 2,
                 "errors": [],
                 "requirements": [
                     {
@@ -96,7 +96,7 @@
             "name": "Slider",
             "slug": "slider",
             "Axe": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
                 "requirements": [
                     {
@@ -121,7 +121,7 @@
             "name": "Input",
             "slug": "input",
             "Axe": {
-                "total_issues": 0,
+                "total_issues": 2,
                 "errors": [],
                 "requirements": []
             },
@@ -155,7 +155,7 @@
             "name": "Toggle/Switch",
             "slug": "toggle",
             "Axe": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
                 "requirements": [
                     {
@@ -180,7 +180,7 @@
             "name": "Toggle/Switch",
             "slug": "switch",
             "Axe": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
                 "requirements": [
                     {
@@ -205,7 +205,7 @@
             "name": "Table",
             "slug": "table",
             "Axe": {
-                "total_issues": 0,
+                "total_issues": 1,
                 "errors": [],
                 "requirements": [
                     {
