@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './sass/main.scss';
 import App from './App';
 import Framework from './partials/framework';
+import FrameworkOverview from './partials/framework-overview';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/:framework/:component?" element={<Framework />} />
+        <Route path="/framework-overview" element={<FrameworkOverview />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
