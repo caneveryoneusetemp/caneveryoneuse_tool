@@ -5,7 +5,8 @@ import mui from './mui.json';
 import bootstrap from './bootstrap.json';
 import foundation from './foundation.json';
 import semanticUi from './semantic_ui.json';
+import tailwindUi from './tailwind_ui.json';
 
-const frameworkData = [antdesign, jqueryUi, materialAngular, mui, bootstrap, foundation, semanticUi];
+const frameworkData = [antdesign, jqueryUi, materialAngular, mui, bootstrap, foundation, semanticUi, tailwindUi];
 
 export default frameworkData;
