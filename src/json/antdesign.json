@@ -29,7 +29,7 @@
       "preview_link": "https://ant.design/components/modal"
     },
     {
-      "name": "Dropdown",
+      "name": "Select/Dropdown",
       "slug":"dropdown",
       "Axe": {
         "total_issues": 0,
@@ -133,7 +133,7 @@
       "preview_link": "https://ant.design/components/input"
     },
     {
-      "name": "Switch",
+      "name": "Toggle/Switch",
       "slug":"switch",
       "Axe": {
         "total_issues": 1,
@@ -198,7 +198,7 @@
       "preview_link": "https://ant.design/components/tooltip"
     },
     {
-      "name": "Alert",
+      "name": "Alert/Notification",
       "slug":"alert",
       "Axe": {
         "total_issues": 0,
@@ -213,7 +213,7 @@
       "preview_link": "https://ant.design/components/alert"
     },
     {
-      "name": "AutoComplete",
+      "name": "Autocomplete",
       "slug":"autocomplete",
       "Axe": {
         "total_issues": 1,
