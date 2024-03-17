@@ -1,22 +1,13 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
-import './sass/main.scss';
 import App from './App';
-import Framework from './partials/framework';
-import FrameworkOverview from './partials/framework-overview';
 import reportWebVitals from './reportWebVitals';
+import './sass/main.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/framework-overview" element={<FrameworkOverview />} />
-        <Route path="/:framework/:component?" element={<Framework />} />
-      </Routes>
-    </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 

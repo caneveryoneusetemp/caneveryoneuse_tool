@@ -16,7 +16,7 @@ const calculateTotalIssues = (component) => {
 };
 
 const getBackgroundClass = (issues) => {
-  if (issues === '-') return 'bg-gray';
+  if (issues === '-') return 'bg-muted';
   const count = parseInt(issues, 10);
   if (count === 0) return 'bg-success';
   if (count > 0 && count <= 2) return 'bg-warning';
@@ -59,7 +59,7 @@ const FrameworkOverview = () => {
             <tr key={index}>
               <td style={columnStyle}>{componentName}</td>
               {issuesCounts.map((count, fwIndex) => (
-                <td key={fwIndex} className={`${getBackgroundClass(count)} text-center text-white`} style={columnStyle}>{count}</td>
+                <td key={fwIndex} className={`${getBackgroundClass(count)} text-center text-bkack`} style={columnStyle}>{count}</td>
               ))}
             </tr>
           ))}
