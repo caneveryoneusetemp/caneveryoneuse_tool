@@ -35,7 +35,7 @@ const SingleFramework = (props) => {
                     <h2>{selectedFramework.name}</h2>
                 </div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center" style={{ gap: '1.5rem' }}>
                 { selectedFramework.components && selectedFramework.components.length > 0 &&
                     <>
                         { selectedComponent && Object.keys(selectedComponent).length !== 0 &&

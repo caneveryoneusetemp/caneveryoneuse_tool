@@ -8,8 +8,9 @@ $yellow:  #fee26f;
 $green:   #aeffca;
 $red: #ffb1b9;
 $gray: #b5c8db;
+$purple: #9d27b0;
 
-$primary: #4f309e;
+$primary: $purple;
 $secondary: $light-gray;
 $warning: $yellow;
 $success: $green;
@@ -25,7 +26,8 @@ $theme-colors: (
   warning: $warning,
   success: $success,
   danger: $danger,
-  muted: $gray
+  muted: $gray,
+  brand: $purple
 );
 
 $grid-breakpoints: (
