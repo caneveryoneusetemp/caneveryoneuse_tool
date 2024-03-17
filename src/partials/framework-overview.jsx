@@ -59,7 +59,7 @@ const FrameworkOverview = () => {
             <tr key={index}>
               <td style={columnStyle}>{componentName}</td>
               {issuesCounts.map((count, fwIndex) => (
-                <td key={fwIndex} className={`${getBackgroundClass(count)} text-center text-white`} style={columnStyle}>{count}</td>
+                <td key={fwIndex} className={`${getBackgroundClass(count)} text-center text-bkack`} style={columnStyle}>{count}</td>
               ))}
             </tr>
           ))}
