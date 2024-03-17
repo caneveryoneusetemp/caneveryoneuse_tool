@@ -35,7 +35,7 @@ const SingleFramework = (props) => {
                     <h2>{selectedFramework.name}</h2>
                 </div>
             </div>
-            <div className="row justify-content-center" style={{ gap: '1.5rem' }}>
+            
                 { selectedFramework.components && selectedFramework.components.length > 0 &&
                     <>
                         { selectedComponent && Object.keys(selectedComponent).length !== 0 &&
@@ -43,19 +43,18 @@ const SingleFramework = (props) => {
                         }
 
                         { (!selectedComponent || ( selectedComponent && Object.keys(selectedComponent).length === 0)) &&
-                            <>
+                            <div className="row justify-content-center" style={{ gap: '1.5rem' }}>
                                 {selectedFramework.components.map( (comp, i ) => {
                                     return (
                                         <Component selectedComponent={comp} key={i} type="sum" />
                                     )
                                 })}
-                            </>
+                            </div>
                         }
                         
                     </>
                 }
             </div>
-        </div>
     );
 
 }
