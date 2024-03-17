@@ -3,22 +3,6 @@
   "version": "5.15.3",
   "components": [
     {
-<<<<<<< HEAD
-      "name": "example_component",
-      "Axe": {
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-=======
       "name": "Modal",
       "Axe": {
         "total_issues": 1,
@@ -31,16 +15,12 @@
               "version": "2.2",
               "success_criteria": "https://www.w3.org/TR/WCAG22/#contrast-minimum"
             }
->>>>>>> 8e4cbf9f4fd5357ca58053563357db03d0ebd314
           }
         ]
       },
       "manual_testing": {
         "errors": []
       },
-<<<<<<< HEAD
-      "preview_link": "https://mui.com/material-ui/react-dialog/"
-=======
       "preview_link": "https://ant.design/components/modal"
     },
     {
@@ -222,7 +202,6 @@
         "errors": []
       },
       "preview_link": "https://ant.design/components/form"
->>>>>>> 8e4cbf9f4fd5357ca58053563357db03d0ebd314
     }
   ]
 }
