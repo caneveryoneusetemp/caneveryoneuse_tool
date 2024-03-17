@@ -1,45 +1,67 @@
 {
-  "name": "Name of framework",
-  "slug": "name-of-framework",
-  "version": "1.0.0",
-  "components": [
-    {
-      "name": "example_component",
-      "Axe": {
-        "total_issues": 1,
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-          }
-        ]
-      },
-      "manual_testing": {
-        "total_issues": 2,
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-          }
-        ]
-      },
-      "preview_link": "https://mui.com/material-ui/react-dialog/"
-    }
-  ]
+    "name": "Name of framework",
+    "slug": "name-of-framework",
+    "version": "1.0.0",
+    "components": [
+        {
+            "name": "example_component",
+            "Axe": {
+                "total_issues": 1,
+                "errors": [
+                    {
+                        "error_type": "WCAG name",
+                        "description": "Describe the error",
+                        "fix": "This is how to fix it",
+                        "wcag": {
+                            "version": "version",
+                            "success_criteria": "success criteria"
+                        }
+                    },
+                    {
+                        "error_type": "ValueError"
+                    }
+                ],
+                "requirements": [
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "The field is required but is missing aria-required=\"true\"",
+                        "fix": "Add the aria-required=\"true\" label to all required fields",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+                        }
+                    }
+                ]
+            },
+            "manual_testing": {
+                "total_issues": 2,
+                "errors": [
+                    {
+                        "error_type": "TypeError",
+                        "description": "",
+                        "fix": "This is how to fix it",
+                        "wcag": {
+                            "version": "version",
+                            "success_criteria": "success criteria"
+                        }
+                    },
+                    {
+                        "error_type": "ValueError"
+                    }
+                ],
+                "requirements": [
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "The field is required but is missing aria-required=\"true\"",
+                        "fix": "Add the aria-required=\"true\" label to all required fields",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://mui.com/material-ui/react-dialog/"
+        }
+    ]
 }
