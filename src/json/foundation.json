@@ -30,7 +30,7 @@
                     {
                         "error_type": "Elements must only use supported ARIA attributes",
                         "description": "Not all ARIA role-attribute combinations are valid. This Rule checks that each role is supplied with allowed attributes.",
-                        "fix": "",
+                        "fix": "Remove the attribute aria-multiselectable",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Name, Role, Value"
@@ -39,7 +39,7 @@
                     {
                         "error_type": "Certain ARIA roles must contain particular children",
                         "description": "Some ARIA parent role values applied to elements must contain specific child elements and role values to perform intended accessibility function.",
-                        "fix": "",
+                        "fix": "Add the attribute role=menuitem on list elements",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Info and Relationships"
@@ -48,7 +48,7 @@
                     {
                         "error_type": "Certain ARIA roles must be contained by particular parents",
                         "description": "Certain ARIA roles must be contained by particular parent roles in order to perform the intended accessibility functions.",
-                        "fix": "",
+                        "fix": "Remove the role menuitem on <a> tag",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Info and Relationships"
