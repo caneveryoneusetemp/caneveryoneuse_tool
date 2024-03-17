@@ -1,6 +1,6 @@
 {
-    "name": "react-mui",
-    "slug": "mui-react-material-ui-components",
+    "name": "MUI - React Material UI components",
+    "slug": "react-mui",
     "version": "5.15.13",
     "components": [
         {
@@ -17,11 +17,23 @@
                             "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
                         }
                     }
+                ],
+                "requirements": [
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "The field is required but is missing aria-required=\"true\"",
+                        "fix": "Add the aria-required=\"true\" label to all required fields",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+                        }
+                    }
                 ]
             },
             "manual_testing": {
                 "total_issues": 0,
-                "errors": []
+                "errors": [],
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-dialog/"
         },
@@ -29,11 +41,13 @@
             "name": "Select",
             "Axe": {
                 "total_issues": 0,
-                "errors": []
+                "errors": [],
+                "requirements": []
             },
             "manual_testing": {
                 "total_issues": 0,
-                "errors": []
+                "errors": [],
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-select/"
         },
@@ -41,11 +55,13 @@
             "name": "Accordion",
             "Axe": {
                 "total_issues": 0,
-                "errors": []
+                "errors": [],
+                "requirements": []
             },
             "manual_testing": {
                 "total_issues": 0,
-                "errors": []
+                "errors": [],
+                "requirements": []
             },
             "preview_link": "https://mui.com/material-ui/react-accordion/"
         }
