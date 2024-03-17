@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link, useParams } from "react-router-dom";
 
 const Component = (props) => {
 
     const { selectedComponent, type } = props;
     const { framework, component } = useParams();
+    const [errorCountTotal, setErrorCountTotal] = useState(0);
+    const [errors, setErrors] = useState([]);
+    const [requirements, setRequirements] = useState([]);
 
     const calculateErrors = (component) => {
 
@@ -23,7 +26,49 @@ const Component = (props) => {
         return count;
     }
 
-    const errorCountTotal = calculateErrors(selectedComponent);
+    useEffect(() => { 
+
+        const errorCount = calculateErrors(selectedComponent);
+
+        setErrorCountTotal( errorCount );
+
+    }, [selectedComponent]);
+
+    useEffect(() => { 
+
+        if ( type === 'sum' ) return;
+
+        let allErrors = [];
+        let allRequirements = [];
+
+        if ( selectedComponent.Axe ) {
+
+            if ( selectedComponent.Axe?.errors.length > 0 ) {
+                allErrors = allErrors.concat( selectedComponent.Axe.errors );
+            }
+
+            if ( selectedComponent.Axe.requirements &&  selectedComponent.Axe.requirements.length > 0 ) {
+                allRequirements = allRequirements.concat( selectedComponent.Axe?.requirements );
+            }
+
+        }
+
+        if ( selectedComponent.manual_testing ) {
+            
+            if ( selectedComponent.manual_testing.errors.length > 0 ) {
+                allErrors = allErrors.concat( selectedComponent.manual_testing.errors );
+            }
+
+            if ( selectedComponent.manual_testing.requirements && selectedComponent.manual_testing?.requirements.length > 0 ) {
+                allRequirements = allRequirements.concat( selectedComponent.manual_testing?.requirements );
+            }
+            
+        }
+
+        setErrors( allErrors );
+        setRequirements( allRequirements );
+
+     }, [selectedComponent, type]);
 
     const retrieveBgColor = (count) => {
         if (count > 3) return 'bg-danger';
@@ -56,13 +101,92 @@ const Component = (props) => {
                 </div>
             }
 
-            {type && type === '' &&
+            {type && type === 'detailed' &&
                 <div className="component-errors">
-                    <div className="row">
-                        <div className="col-12">
-                            <h3>Found errors</h3>
+
+                    {errors && errors.length > 0 &&
+                        <div className="row">
+                            <div className="col-12">
+                                <h3>Found errors of {selectedComponent.name} component</h3>
+
+                                <div className="mt-4">
+                                    {errors.map((error, i) => {
+                                        return(
+                                            <div className="error-item border-bottom mb-4" key={i}>
+                                                <div className="row mb-2">
+                                                    <div className="col-4">
+                                                        <span>Error Type: </span>
+                                                    </div>
+                                                    <div className="col-8">
+                                                        <span>{error.error_type}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="row mb-2">
+                                                    <div className="col-4">
+                                                     <span>Error Details: </span>
+                                                    </div>
+                                                    <div className="col-8">
+                                                        <div dangerouslySetInnerHTML={{__html: error.description}}></div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div className="row mb-2">
+                                                    <div className="col-4">
+                                                        <span>How to fix the error? </span>
+                                                    </div>
+                                                    <div className="col-8">
+                                                        <span>{error.fix}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    }
+
+                    {requirements && requirements.length > 0 &&
+                        <div className="row">
+                            <div className="col-12 mt-4">
+                                <h3>Accessibility requirements of {selectedComponent.name} component</h3>
+
+                                <div className="mt-4">
+                                    {requirements.map((requirement, i) => {
+                                        return(
+                                            <div className="error-item border-bottom mb-4" key={i}>
+                                                <div className="row mb-2">
+                                                    <div className="col-4">
+                                                        <span>Requirement Type: </span>
+                                                    </div>
+                                                    <div className="col-8">
+                                                        <span>{requirement.error_type}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="row mb-2">
+                                                    <div className="col-4">
+                                                     <span>Requirement Details: </span>
+                                                    </div>
+                                                    <div className="col-8">
+                                                        <div dangerouslySetInnerHTML={{__html: requirement.description}}></div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div className="row mb-2">
+                                                    <div className="col-4">
+                                                        <span>How to implement </span>
+                                                    </div>
+                                                    <div className="col-8">
+                                                        <span>{requirement.fix}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                    }
                 </div>
             }
         </>
