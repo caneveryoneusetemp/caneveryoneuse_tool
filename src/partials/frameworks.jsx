@@ -1,9 +1,14 @@
 import React,  {useState} from 'react';
 import frameworkData from '../json';
+import SingleFramework from './single-framework';
 
 const Frameworks = () => {
 
     const [selectedFramework, setSelectedFramework] = useState({});
+
+    const handleFrameworkSelect = ( item ) => {
+        setSelectedFramework(item);
+    }
 
     return(
         <div className="container">
@@ -27,36 +32,7 @@ const Frameworks = () => {
             }
 
             { selectedFramework && Object.keys(selectedFramework).length !== 0 &&
-                <>
-                    <div className="row">
-                        <div className="col-12 my-5">
-                            <div className="mb-4">
-                                <span className="pointer text-decoration-hover go-back" onClick={() => setSelectedFramework({})}>Back</span>
-                            </div>
-                            <h2>{selectedFramework.name}</h2>
-                        </div>
-                    </div>
-                    <div className="row">
-                        { selectedFramework.components && selectedFramework.components.length > 0 &&
-                            <>
-                                {selectedFramework.components.map( (component, i ) => {
-                                    return (
-                                        <div className="col-12 col-lg-4 mb-4" key={i}>
-                                            <div className="card">
-                                                <div className="card-header">{component.name}</div>
-                                                <div className="card-body">
-                                                    <h5 className="card-title">Special title treatment</h5>
-                                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                    <button type="button" className="btn btn-primary">Go somewhere</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })}
-                            </>
-                        }
-                    </div>
-                </>
+                <SingleFramework framework={selectedFramework} onSelect={(data) => handleFrameworkSelect(data)} />
             }
             
         </div>
