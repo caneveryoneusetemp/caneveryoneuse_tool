@@ -1,6 +1,6 @@
 # JSON files for tested component libraries
 - This directory contains a `template.json` with an example JSON file that can be used to fill in test results for different component libraries.
-- Each component library has its own directory which in turn contains the JSON file specific to that framework. Any other relevant files or data (e.g. test results) can be committed to the specific directory as needed.
+- Each component library has its own file which in turn contains the JSON file specific to that framework.
 
 ## How to add a new component library
 - Copy the contents of `template.json` into a new file, rename the file to match the name of the component library and replace the sample data with your test results.
