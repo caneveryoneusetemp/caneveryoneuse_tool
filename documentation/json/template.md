@@ -16,7 +16,7 @@ The version of the UI library.
 ### preview_link
 To test the component, we need a standalone implementation. The link leads to preview of the component of the library.
 
-### Axe, manual_testing
+### Testresults: Axe, manual_testing
 We use axe DevTools for automated testing and manual testing. The results need to be put in the respective objects. 
 
 #### total_issues
@@ -43,9 +43,6 @@ Version of WCAG, for example 2.2
 
 ###### success_criteria
 The link to the success criterion for further information
-
-### manual testing
-Contains the same properties as axe
 
 ## Feedback
 The template is work in progress. If you have improvements, please share with the group.
