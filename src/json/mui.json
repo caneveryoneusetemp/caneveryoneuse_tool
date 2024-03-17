@@ -84,7 +84,26 @@
             "Axe": {
                 "total_issues": 0,
                 "errors": [],
-                "requirements": []
+                "requirements": [
+                    {
+                        "error_type": "1.4.1 Use of Color",
+                        "description": "The stepper-dots element progress is shown using changing colors",
+                        "fix": "Include a text cue in the labels as the progress changes",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color"
+                        }
+                    },
+                    {
+                        "error_type": "4.1.2 Name, Role, Value",
+                        "description": "The stepper-dots element's accessible name is missing",
+                        "fix": "Can be done by adding a aria-label attribute, or the aria-labelledby attribute.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html"
+                        }
+                    }
+                ]
             },
             "manual_testing": {
                 "total_issues": 0,
