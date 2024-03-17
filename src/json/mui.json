@@ -1,5 +1,6 @@
 {
-    "name": "MUI - React Material UI components",
+    "name": "react-mui",
+    "slug": "MUI - React Material UI components"
     "version": "5.15.13",
     "components": [
         {
@@ -34,7 +35,19 @@
                 "total_issues": 0,
                 "errors": []
             },
-            "preview_link": "https://mui.com/material-ui/react-dialog/"
+            "preview_link": "https://mui.com/material-ui/react-select/"
+        },
+        {
+            "name": "Accordion",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://mui.com/material-ui/react-accordion/"
         }
     ]
 }
