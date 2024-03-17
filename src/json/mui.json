@@ -1,6 +1,6 @@
 {
-    "name": "react-mui",
-    "slug": "mui-react-material-ui-components",
+    "name": "MUI - React Material UI components",
+    "slug": "react-mui",
     "version": "5.15.13",
     "components": [
         {
