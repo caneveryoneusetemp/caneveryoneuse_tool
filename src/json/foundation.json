@@ -5,6 +5,7 @@
     "components": [
         {
             "name": "Modal",
+            "slug":"modal",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -13,6 +14,7 @@
         },
         {
             "name": "Dropdown",
+            "slug":"dropdown",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -21,6 +23,7 @@
         },
         {
             "name": "Accordion",
+            "slug":"accordion",
             "Axe": {
                 "total_issues": 6,
                 "errors": [
@@ -57,6 +60,7 @@
         },
         {
             "name": "Carousel",
+            "slug":"carousel",
             "Axe": {
                 "total_issues": 2,
                 "errors": [
@@ -84,6 +88,7 @@
         },
         {
             "name": "Slider",
+            "slug":"slider",
             "Axe": {
                 "total_issues": 2,
                 "errors": [
@@ -111,6 +116,7 @@
         },
         {
             "name": "input",
+            "slug": "input",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -119,6 +125,7 @@
         },
         {
             "name": "switch",
+            "slug": "switch",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -127,6 +134,7 @@
         },
         {
             "name": "table",
+            "slug": "table",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -135,6 +143,7 @@
         },
         {
             "name": "alert",
+            "slug": "alert",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -143,6 +152,7 @@
         },
         {
             "name": "form",
+            "slug": "form",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -151,6 +161,7 @@
         },
         {
             "name": "list",
+            "slug": "list",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
