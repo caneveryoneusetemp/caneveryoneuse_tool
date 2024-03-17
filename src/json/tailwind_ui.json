@@ -1,0 +1,96 @@
+{
+    "name": "Tailwind UI",
+    "version": "December 20, 2023",
+    "components": [
+        {
+            "name": "Dialogs",
+            "Axe": {
+                "total_issues": 1,
+                "errors": [
+                    {
+                        "error_type": "Elements must only use supported ARIA attributes",
+                        "description": "Ensures an element's role supports its ARIA attributes",
+                        "fix": "ARIA attribute is not allowed: aria-modal=\"true\"",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "Role gets set to dialog or alertdialog"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/overlays/dialogs"
+        },
+        {
+            "name": "Dialogs",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/elements/dropdowns"
+        },
+        {
+            "name": "Input Groups",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/forms/input-groups"
+        },
+        {
+            "name": "Toggles",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/forms/toggles"
+        },
+        {
+            "name": "Tables",
+            "Axe": {
+                "total_issues": 26,
+                "errors": [
+                    {
+                        "error_type": "Form elements must have labels",
+                        "description": "Ensures every form element has a label",
+                        "fix": "Add a label for every form element",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "4.1.2: MUST: Name, Role, Value"
+                        }
+                    },
+                    {
+                        "error_type": "Scrollable region must have keyboard access",
+                        "description": "Ensure elements that have scrollable content are accessible by keyboard",
+                        "fix": "Element should have focusable content or Element should be focusable",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "2.1.1: MUST: Keyboard"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/lists/tables"
+        },
+        {
+            "name": "Alerts",
+            "Axe": {
+                "total_issues": 5,
+                "errors": [
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/feedback/alerts"
+        },
+        {
+            "name": "Form Layouts",
+            "Axe": {
+                "total_issues": 6,
+                "errors": [
+                ]
+            },
+            "preview_link": "https://tailwindui.com/components/application-ui/forms/form-layouts"
+        }
+    ]
+}
