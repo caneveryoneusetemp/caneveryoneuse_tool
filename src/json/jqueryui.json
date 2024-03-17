@@ -6,6 +6,7 @@
         {
             "name": "Dialog",
             "Axe": {
+                "total_issues": 6,
                 "errors": [
                 ]
             },
@@ -36,6 +37,7 @@
         {
             "name": "Selectmenu",
             "Axe": {
+                "total_issues": 4,
                 "errors": [
                     {
                         "error_type": "ARIA input fields must have an accessible name",
@@ -53,6 +55,7 @@
         {
             "name": "Accordion",
             "Axe": {
+                "total_issues": 2,
                 "errors": [
                     {
                         "error_type": "Certain ARIA roles must contain particular children",
@@ -70,6 +73,7 @@
         {
             "name": "Slider",
             "Axe": {
+                "total_issues": 0,
                 "errors": [
                 ]
             },
@@ -78,6 +82,7 @@
         {
             "name": "Tooltip",
             "Axe": {
+                "total_issues": 0,
                 "errors": [
                 ]
             },
@@ -86,6 +91,7 @@
         {
             "name": "Autocomplete",
             "Axe": {
+                "total_issues": 0,
                 "errors": [
                 ]
             },
