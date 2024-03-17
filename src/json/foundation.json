@@ -13,7 +13,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/mobile-ios-modal-iframe.html"
         },
         {
-            "name": "Dropdown",
+            "name": "Select/Dropdown",
             "slug":"dropdown",
             "Axe": {
                 "total_issues": 0,
@@ -133,7 +133,7 @@
             "preview_link": ""
         },
         {
-            "name": "Tabelle",
+            "name": "Table",
             "slug": "table",
             "Axe": {
                 "total_issues": 0,
@@ -142,7 +142,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
         },
         {
-            "name": "Alert / Notification",
+            "name": "Alert/Notification",
             "slug": "alert",
             "Axe": {
                 "total_issues": 0,
@@ -160,7 +160,7 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/translucent-form-overlay-iframe.html"
         },
         {
-            "name": "Ordered / unordered List",
+            "name": "List",
             "slug": "list",
             "Axe": {
                 "total_issues": 0,
