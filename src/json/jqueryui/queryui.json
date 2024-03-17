@@ -1,0 +1,94 @@
+{
+    "name": "jQuery UI",
+    "version": "1.13.2",
+    "components": [
+        {
+            "name": "Dialog",
+            "Axe": {
+                "errors": [
+                ]
+            },
+            "manual_testing": {
+                "errors": [
+                    {
+                        "error_type": "2.5.7 Dragging Movements",
+                        "description": "Dialog can only resize with mouse.",
+                        "fix": "Provide alternative.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#dragging-movements"
+                        }
+                    },
+                    {
+                        "error_type": "2.1.1 Keyboard",
+                        "description": "<ol><li>Resize dialog via drag and drop</li><li>Zoom into Browser</li><li>Text gets cut and is not reachable via keyboard</li></ol>",
+                        "fix": "_",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#keyboard"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://jqueryui.com/resources/demos/dialog/default.html"
+        },
+        {
+            "name": "Selectmenu",
+            "Axe": {
+                "errors": [
+                    {
+                        "error_type": "ARIA input fields must have an accessible name",
+                        "description": "Ensures every ARIA input field has an accessible name.",
+                        "fix": "Set a name attribute",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Name, Role, Value"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://jqueryui.com/resources/demos/selectmenu/default.html"
+        },
+        {
+            "name": "Accordion",
+            "Axe": {
+                "errors": [
+                    {
+                        "error_type": "Certain ARIA roles must contain particular children",
+                        "description": "Ensures elements with an ARIA role that require child roles contain them",
+                        "fix": "The tabpanel should contain elements with the rule tab.",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Info and Relationships"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://jqueryui.com/resources/demos/accordion/default.html"
+        },
+        {
+            "name": "Slider",
+            "Axe": {
+                "errors": [
+                ]
+            },
+            "preview_link": "https://jqueryui.com/resources/demos/slider/default.html"
+        },
+        {
+            "name": "Tooltip",
+            "Axe": {
+                "errors": [
+                ]
+            },
+            "preview_link": "https://jqueryui.com/resources/demos/tooltip/default.html"
+        },
+        {
+            "name": "Autocomplete",
+            "Axe": {
+                "errors": [
+                ]
+            },
+            "preview_link": "https://jqueryui.com/resources/demos/autocomplete/default.html"
+        }
+    ]
+}

@@ -1,44 +1,40 @@
 {
-  "name": "MUI - React Material UI components",
-  "version": "5.15.13",
-  "components": [
-    {
-      "name": "Dialog",
-      "lighthouse": {
-        "lighthouse_score": "85",
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-          }
-        ]
-      },
-      "manual_testing": {
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-          }
-        ]
-      },
-      "lighthouse_score": "85",
-      "preview_link": "https://mui.com/material-ui/react-dialog/"
-    }
-  ]
+    "name": "MUI - React Material UI components",
+    "version": "5.15.13",
+    "components": [
+        {
+            "name": "Dialog",
+            "Axe": {
+                "total_issues": 1,
+                "errors": [
+                    {
+                        "error_type": "3.3.2 Labels or Instructions",
+                        "description": "The field is required but is missing aria-required=\"true\"",
+                        "fix": "Add the aria-required=\"true\" label to all required fields",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+                        }
+                    }
+                ]
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://mui.com/material-ui/react-dialog/"
+        },
+        {
+            "name": "Select",
+            "Axe": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "manual_testing": {
+                "total_issues": 0,
+                "errors": []
+            },
+            "preview_link": "https://mui.com/material-ui/react-dialog/"
+        }
+    ]
 }
