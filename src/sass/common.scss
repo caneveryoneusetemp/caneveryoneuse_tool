@@ -9,3 +9,35 @@
 .pointer {
     cursor: pointer;
 }
+
+.component {
+    &-card {
+        border-radius: 20px;
+        border: 1px solid #000;
+        padding: 2rem;
+        min-height: 280px;
+        box-shadow: 5px 5px rgba(73, 80, 87, 0.2);
+
+        &-footer {
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+            gap: .5rem;
+        }
+    }
+    &-card-header {
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 0 0 .5rem 0;
+    }
+    &-card-title {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        gap: .5rem;
+    }
+}
