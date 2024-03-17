@@ -5,6 +5,7 @@
     {
       "name": "example_component",
       "Axe": {
+        "total_issues": 1,
         "errors": [
           {
             "error_type": "TypeError",
@@ -21,6 +22,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 2,
         "errors": [
           {
             "error_type": "TypeError",

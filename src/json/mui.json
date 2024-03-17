@@ -4,8 +4,7 @@
   "components": [
     {
       "name": "Dialog",
-      "lighthouse": {
-        "lighthouse_score": "85",
+      "axe-deque": {
         "errors": [
           {
             "error_type": "TypeError",
@@ -37,7 +36,6 @@
           }
         ]
       },
-      "lighthouse_score": "85",
       "preview_link": "https://mui.com/material-ui/react-dialog/"
     }
   ]
