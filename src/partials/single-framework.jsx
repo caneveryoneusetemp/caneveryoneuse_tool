@@ -39,14 +39,14 @@ const SingleFramework = (props) => {
                 { selectedFramework.components && selectedFramework.components.length > 0 &&
                     <>
                         { selectedComponent && Object.keys(selectedComponent).length !== 0 &&
-                            <Component component={selectedComponent} type="detailed" />
+                            <Component selectedComponent={selectedComponent} type="detailed" />
                         }
 
                         { (!selectedComponent || ( selectedComponent && Object.keys(selectedComponent).length === 0)) &&
                             <>
                                 {selectedFramework.components.map( (comp, i ) => {
                                     return (
-                                        <Component component={comp} key={i} type="sum" />
+                                        <Component selectedComponent={comp} key={i} type="sum" />
                                     )
                                 })}
                             </>
