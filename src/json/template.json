@@ -5,6 +5,7 @@
     "components": [
         {
             "name": "example_component",
+            "slug": "slug",
             "Axe": {
                 "total_issues": 1,
                 "errors": [
