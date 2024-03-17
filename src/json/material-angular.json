@@ -5,7 +5,7 @@
     {
       "name": "dialog",
       "Axe": {
-        "total_issues": 0,
+        "total_issues": 0
       },
       "manual_testing": {
         "errors": [
@@ -25,7 +25,7 @@
     {
       "name": "select",
       "Axe": {
-        "total_issues": 0,
+        "total_issues": 0
       },
       "manual_testing": {
         "errors": [
