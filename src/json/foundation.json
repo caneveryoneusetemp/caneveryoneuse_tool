@@ -1,1 +1,184 @@
-
+{
+    "name": "Foundation",
+    "version": "6.8.1",
+    "components": [
+        {
+            "name": "Modal",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/mobile-ios-modal-iframe.html"
+        },
+        {
+            "name": "Dropdown",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/dropdown-animated-iframe.html"
+        },
+        {
+            "name": "Accordion",
+            "Axe": {
+                "total_issues": 6,
+                "errors": [
+                    {
+                        "error_type": "Elements must only use supported ARIA attributes",
+                        "description": "Not all ARIA role-attribute combinations are valid. This Rule checks that each role is supplied with allowed attributes.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Name, Role, Value"
+                        }
+                    },
+                    {
+                        "error_type": "Certain ARIA roles must contain particular children",
+                        "description": "Some ARIA parent role values applied to elements must contain specific child elements and role values to perform intended accessibility function.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Info and Relationships"
+                        }
+                    },
+                    {
+                        "error_type": "Certain ARIA roles must be contained by particular parents",
+                        "description": "Certain ARIA roles must be contained by particular parent roles in order to perform the intended accessibility functions.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Info and Relationships"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/multilevel-accordion-menu-iframe.html"
+        },
+        {
+            "name": "Carousel",
+            "Axe": {
+                "total_issues": 2,
+                "errors": [
+                    {
+                        "error_type": "Images must have alternate text",
+                        "description": "All images must have alternate text to convey their purpose and meaning to screen reader users.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Non-text Content"
+                        }
+                    },
+                    {
+                        "error_type": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+                        "description": "Lists must be marked up correctly, meaning they must not contain content elements other than li elements.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Info and Relationships"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/news-image-gallery-iframe.html"
+        },
+        {
+            "name": "Slider",
+            "Axe": {
+                "total_issues": 2,
+                "errors": [
+                    {
+                        "error_type": "Images must have alternate text",
+                        "description": "All images must have alternate text to convey their purpose and meaning to screen reader users.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Non-text Content"
+                        }
+                    },
+                    {
+                        "error_type": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+                        "description": "Lists must be marked up correctly, meaning they must not contain content elements other than li elements.",
+                        "fix": "",
+                        "wcag": {
+                            "version": "2.2",
+                            "success_criteria": "MUST: Info and Relationships"
+                        }
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/testimonial-slider-iframe.html"
+        },
+        {
+            "name": "input",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/show-password-iframe.html"
+        },
+        {
+            "name": "switch",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": ""
+        },
+        {
+            "name": "table",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
+        },
+        {
+            "name": "alert",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/alerts-fancy-iframe.html"
+        },
+        {
+            "name": "form",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/translucent-form-overlay-iframe.html"
+        },
+        {
+            "name": "list",
+            "Axe": {
+                "total_issues": 0,
+                "errors": [
+                    {
+                    }
+                ]
+            },
+            "preview_link": "https://get.foundation/building-blocks/blocks/stats-list-iframe.html"
+        }
+    ]
+}
