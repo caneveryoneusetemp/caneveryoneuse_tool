@@ -20,6 +20,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/modal"
@@ -53,6 +54,7 @@
         "errors": []
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/collapse"
@@ -64,6 +66,7 @@
         "errors": []
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/carousel"
@@ -94,6 +97,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/slider"
@@ -105,6 +109,7 @@
         "errors": []
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/input"
@@ -126,6 +131,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/switch"
@@ -147,6 +153,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/table"
@@ -158,6 +165,7 @@
         "errors": []
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/tooltip"
@@ -169,6 +177,7 @@
         "errors": []
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/alert"
@@ -190,6 +199,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/auto-complete"
@@ -211,6 +221,7 @@
         ]
       },
       "manual_testing": {
+        "total_issues": 0,
         "errors": []
       },
       "preview_link": "https://ant.design/components/form"
