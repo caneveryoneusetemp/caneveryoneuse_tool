@@ -26,7 +26,7 @@
         "preview_link": "https://getbootstrap.com/docs/5.3/components/modal/#modal-components"
       },
       {
-        "name": "Dropdown",
+        "name": "Select/Dropdown",
         "Axe": {
           "total_issues": 0,
           "errors": []

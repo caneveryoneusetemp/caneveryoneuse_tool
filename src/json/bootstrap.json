@@ -17,7 +17,7 @@
         "preview_link": "https://getbootstrap.com/docs/5.3/components/modal/#modal-components"
       },
       {
-        "name": "Dropdown",
+        "name": "Select/Dropdown",
         "slug":"dropdown",
         "Axe": {
           "total_issues": 0,
@@ -79,7 +79,7 @@
         "preview_link": "https://getbootstrap.com/docs/5.3/forms/form-control/#example"
       },
       {
-        "name": "Switches",
+        "name": "Toggle/Switch",
         "slug":"switches",
         "Axe": {
           "total_issues": 0,
@@ -118,7 +118,7 @@
         "preview_link": "https://getbootstrap.com/docs/5.3/components/tooltips/#custom-tooltips"
       },
       {
-        "name": "Alert",
+        "name": "Alert/Notification",
         "slug":"alert",
         "Axe": {
           "total_issues": 0,
