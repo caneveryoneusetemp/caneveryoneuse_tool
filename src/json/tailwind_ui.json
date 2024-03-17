@@ -5,6 +5,7 @@
     "components": [
         {
             "name": "Dialogs",
+            "slug": "dialogs",
             "Axe": {
                 "total_issues": 1,
                 "errors": [
@@ -22,7 +23,8 @@
             "preview_link": "https://tailwindui.com/components/application-ui/overlays/dialogs"
         },
         {
-            "name": "Dialogs",
+            "name": "Dropdowns",
+            "slug": "dropdowns",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -32,6 +34,7 @@
         },
         {
             "name": "Input Groups",
+            "slug": "input-groups",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -41,6 +44,7 @@
         },
         {
             "name": "Toggles",
+            "slug": "toggles",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -50,6 +54,7 @@
         },
         {
             "name": "Tables",
+            "slug": "tables",
             "Axe": {
                 "total_issues": 26,
                 "errors": [
@@ -77,6 +82,7 @@
         },
         {
             "name": "Alerts",
+            "slug": "alerts",
             "Axe": {
                 "total_issues": 5,
                 "errors": [
@@ -86,6 +92,7 @@
         },
         {
             "name": "Form Layouts",
+            "slug": "form-layouts",
             "Axe": {
                 "total_issues": 6,
                 "errors": [

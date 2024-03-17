@@ -5,6 +5,7 @@
     "components": [
         {
             "name": "Dialog",
+            "slug": "dialog",
             "Axe": {
                 "total_issues": 6,
                 "errors": [
@@ -36,6 +37,7 @@
         },
         {
             "name": "Selectmenu",
+            "slug": "select-menu",
             "Axe": {
                 "total_issues": 4,
                 "errors": [
@@ -54,6 +56,7 @@
         },
         {
             "name": "Accordion",
+            "slug": "accordion",
             "Axe": {
                 "total_issues": 2,
                 "errors": [
@@ -72,6 +75,7 @@
         },
         {
             "name": "Slider",
+            "slug": "slider",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -81,6 +85,7 @@
         },
         {
             "name": "Tooltip",
+            "slug": "tooltip",
             "Axe": {
                 "total_issues": 0,
                 "errors": [
@@ -90,6 +95,7 @@
         },
         {
             "name": "Autocomplete",
+            "slug": "autocomplete",
             "Axe": {
                 "total_issues": 0,
                 "errors": [

@@ -5,6 +5,7 @@
     "components": [
         {
             "name": "Modal",
+            "slug":"modal",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -13,6 +14,7 @@
         },
         {
             "name": "Dropdown",
+            "slug":"dropdown",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -21,13 +23,14 @@
         },
         {
             "name": "Accordion",
+            "slug":"accordion",
             "Axe": {
                 "total_issues": 6,
                 "errors": [
                     {
                         "error_type": "Elements must only use supported ARIA attributes",
                         "description": "Not all ARIA role-attribute combinations are valid. This Rule checks that each role is supplied with allowed attributes.",
-                        "fix": "",
+                        "fix": "Remove the attribute aria-multiselectable",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Name, Role, Value"
@@ -36,7 +39,7 @@
                     {
                         "error_type": "Certain ARIA roles must contain particular children",
                         "description": "Some ARIA parent role values applied to elements must contain specific child elements and role values to perform intended accessibility function.",
-                        "fix": "",
+                        "fix": "Add the attribute role=menuitem on list elements",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Info and Relationships"
@@ -45,7 +48,7 @@
                     {
                         "error_type": "Certain ARIA roles must be contained by particular parents",
                         "description": "Certain ARIA roles must be contained by particular parent roles in order to perform the intended accessibility functions.",
-                        "fix": "",
+                        "fix": "Remove the role menuitem on <a> tag",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Info and Relationships"
@@ -57,6 +60,7 @@
         },
         {
             "name": "Carousel",
+            "slug":"carousel",
             "Axe": {
                 "total_issues": 2,
                 "errors": [
@@ -84,6 +88,7 @@
         },
         {
             "name": "Slider",
+            "slug":"slider",
             "Axe": {
                 "total_issues": 2,
                 "errors": [
@@ -110,7 +115,8 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/testimonial-slider-iframe.html"
         },
         {
-            "name": "input",
+            "name": "Input",
+            "slug": "input",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -118,7 +124,8 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/show-password-iframe.html"
         },
         {
-            "name": "switch",
+            "name": "Toggle/Switch",
+            "slug": "switch",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -126,7 +133,8 @@
             "preview_link": ""
         },
         {
-            "name": "table",
+            "name": "Tabelle",
+            "slug": "table",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -134,7 +142,8 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
         },
         {
-            "name": "alert",
+            "name": "Alert / Notification",
+            "slug": "alert",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -142,7 +151,8 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/alerts-fancy-iframe.html"
         },
         {
-            "name": "form",
+            "name": "Form",
+            "slug": "form",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
@@ -150,7 +160,8 @@
             "preview_link": "https://get.foundation/building-blocks/blocks/translucent-form-overlay-iframe.html"
         },
         {
-            "name": "list",
+            "name": "Ordered / unordered List",
+            "slug": "list",
             "Axe": {
                 "total_issues": 0,
                 "errors": []
