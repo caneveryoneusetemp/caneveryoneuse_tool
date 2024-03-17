@@ -1,5 +1,6 @@
 {
   "name": "Name of framework",
+  "slug": "name-of-framework",
   "version": "1.0.0",
   "components": [
     {
