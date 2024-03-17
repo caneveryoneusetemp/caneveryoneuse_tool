@@ -1,6 +1,6 @@
 {
-  "name": "Name of framework",
-  "version": "1.0.0",
+  "name": "Ant Design",
+  "version": "5.15.3",
   "components": [
     {
       "name": "example_component",
@@ -21,20 +21,7 @@
         ]
       },
       "manual_testing": {
-        "errors": [
-          {
-            "error_type": "TypeError",
-            "description": "",
-            "fix": "This is how to fix it",
-            "wcag": {
-              "version": "version",
-              "success_criteria": "success criteria"
-            }
-          },
-          {
-            "error_type": "ValueError"
-          }
-        ]
+        "errors": []
       },
       "preview_link": "https://mui.com/material-ui/react-dialog/"
     }
