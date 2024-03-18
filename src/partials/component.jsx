@@ -81,7 +81,7 @@ const Component = (props) => {
      }, [selectedComponent, type]);
 
     const retrieveBgColor = (count) => {
-        if (count > 3) return 'bg-danger';
+        if (count > 2) return 'bg-danger';
         return count > 0 ? 'bg-warning' : 'bg-success';
     }
 
