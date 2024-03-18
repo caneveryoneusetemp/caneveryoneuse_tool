@@ -11,6 +11,9 @@
 # production
 /build
 
+# PhpStorm
+.idea
+
 # misc
 .DS_Store
 .env.local
