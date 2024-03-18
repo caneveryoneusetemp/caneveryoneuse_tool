@@ -26,6 +26,7 @@ const Search = () => {
             maxWidth: '800px',
             margin: '0 auto',
             width: '100%',
+            paddingBottom: '6px'
         }
     };
 
