@@ -25,7 +25,7 @@
             "name": "Accordion",
             "slug":"accordion",
             "Axe": {
-                "total_issues": 6,
+                "total_issues": 3,
                 "errors": [
                     {
                         "error_type": "Elements must only use supported ARIA attributes",
