@@ -94,7 +94,7 @@ const Component = (props) => {
                         <h5 className="component-card-title">
                             <b>{errorCountTotal > 0 ? errorCountTotal : 'OK'}</b>
                             {errorCountTotal > 0 &&
-                                <a href={`/${framework}/${selectedComponent.slug}/`}  target="_blank" rel="noreferrer" aria-label="view errors"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
+                                <a href={`/${framework}/${selectedComponent.slug}/`}  target="_blank" rel="noreferrer" aria-label="view errors"><svg aria-hidden={true} xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
                             }
                         </h5>
 
