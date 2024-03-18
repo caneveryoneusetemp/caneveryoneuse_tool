@@ -2,7 +2,6 @@ import React from 'react';
 import frameworkData from '../json';
 import { Link } from "react-router-dom";
 
-
 const calculateTotalIssues = (component) => {
   let totalIssues = 0;
 
@@ -27,17 +26,21 @@ const getBackgroundClass = (issues) => {
 
 const FrameworkOverview = () => {
   const allComponentNames = [...new Set(frameworkData.flatMap(framework =>
-    framework.components.map(component => component.name)))];
+    framework.components.map(component => ({ name: component.name, slug: component.slug }))))];
 
-  const componentIssuesMap = allComponentNames.reduce((acc, name) => {
+  const componentIssuesMap = allComponentNames.reduce((acc, { name, slug }) => {
     acc[name] = frameworkData.map(framework => {
       const component = framework.components.find(c => c.name === name);
-      return component ? calculateTotalIssues(component) : '-';
+      return component ? { issues: calculateTotalIssues(component), slug: `${framework.slug}/${component.slug}` } : { issues: '-', slug: null };
     });
     return acc;
   }, {});
 
-  // Inline style for equal column width
+  const linkStyle = {
+    textDecoration: 'none',
+    color: 'black',
+  };
+
   const columnStyle = {
     width: `${100 / (frameworkData.length + 1)}%`,
     textAlign: 'center',
@@ -64,8 +67,12 @@ const FrameworkOverview = () => {
           {Object.entries(componentIssuesMap).map(([componentName, issuesCounts], index) => (
             <tr key={index}>
               <td style={columnStyle}>{componentName}</td>
-              {issuesCounts.map((count, fwIndex) => (
-                <td key={fwIndex} className={`${getBackgroundClass(count)} text-center text-bkack`} style={columnStyle}>{count}</td>
+              {issuesCounts.map(({ issues, slug }, fwIndex) => (
+                <td key={fwIndex} className={`${getBackgroundClass(issues)} text-center`} style={columnStyle}>
+                  {issues !== '-' && parseInt(issues, 10) > 0 ? (
+                    <Link to={`/${slug}`} style={linkStyle}>{issues}</Link>
+                  ) : issues}
+                </td>
               ))}
             </tr>
           ))}

@@ -76,7 +76,7 @@ const Search = () => {
                             <div className="position-relative" style={style.inputWrapper} >
                                 <input
                                     style={style.input}
-                                    type="text"
+                                    type="search"
                                     className="form-control form-control-search rounded-4 bg-white"
                                     id="search_q"
                                     placeholder="Search here..."
