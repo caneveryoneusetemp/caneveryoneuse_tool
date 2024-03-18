@@ -94,17 +94,13 @@ const Component = (props) => {
                         <h5 className="component-card-title">
                             <b>{errorCountTotal > 0 ? errorCountTotal : 'OK'}</b>
                             {errorCountTotal > 0 &&
-                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="view errors"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
+                                <a href={`/${framework}/${selectedComponent.slug}/`}  target="_blank" rel="noreferrer" aria-label="view errors"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
                             }
                         </h5>
 
-                        <div className="component-card-footer d-flex flex-column">
+                        <div className="component-card-footer d-flex flex-column text-center">
                             {selectedComponent.preview_link && selectedComponent.preview_link.length > 0 &&
-                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="open component example">Preview <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><g fill="none" fillRule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg></a>
-                            }
-
-                            { framework && !component && errorCountTotal > 0 &&
-                                <Link to={`/${framework}/${selectedComponent.slug}/`} className="btn btn-secondary">Check errors</Link>
+                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="open component example"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><g fill="none" fillRule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg></a>
                             }
                         </div>
                     </div>
@@ -202,24 +198,24 @@ const Component = (props) => {
                                         return(
                                             <div className="error-item border-bottom mb-4" key={i}>
                                                 <div className="row mb-2">
-                                                    <div className="col-4">
+                                                    <div className="col-12 col-md-4">
                                                         <span>Requirement Type: </span>
                                                     </div>
-                                                    <div className="col-8">
+                                                    <div className="col-12 col-md-8">
                                                         <span>{requirement.error_type}</span>
                                                     </div>
                                                 </div>
                                                 <div className="row mb-2">
-                                                    <div className="col-4">
+                                                    <div className="col-12 col-md-4">
                                                      <span>Requirement Details: </span>
                                                     </div>
-                                                    <div className="col-8">
+                                                    <div className="col-12 col-md-8">
                                                         <div dangerouslySetInnerHTML={{__html: requirement.description}}></div>
                                                     </div>
 
                                                 </div>
                                                 <div className="row mb-2">
-                                                    <div className="col-4">
+                                                    <div className="col-12 col-md-4">
                                                         <span>How to implement </span>
                                                     </div>
                                                     <div className="col-8">
@@ -228,16 +224,16 @@ const Component = (props) => {
                                                 </div>
                                                 {requirement.wcag &&
                                                     <div className="row mb-2">
-                                                        <div className="col-4">
+                                                        <div className="col-12 col-md-4">
                                                             <span>WCAG Compliance information </span>
                                                         </div>
-                                                        <div className="col-8">
+                                                        <div className="col-12 col-md-8">
                                                             {requirement.wcag.version &&
                                                                 <div className="row">
-                                                                    <div className="col-3">
+                                                                    <div className="col-12 col-md-3">
                                                                         <span>Version: </span>
                                                                     </div>
-                                                                    <div className="col-9">
+                                                                    <div className="col-12 col-md-9">
                                                                         <span>{requirement.wcag.version}</span>
                                                                     </div>
                                                                 </div>
@@ -245,10 +241,10 @@ const Component = (props) => {
 
                                                             {requirement.wcag.success_criteria &&
                                                                 <div className="row">
-                                                                    <div className="col-3">
+                                                                    <div className="col-12 col-md-3">
                                                                         <span>Success Criteria </span>
                                                                     </div>
-                                                                    <div className="col-9">
+                                                                    <div className="col-12 col-md-9">
                                                                         { isValidUrl( requirement.wcag.success_criteria )
                                                                             ?  <a href={requirement.wcag.success_criteria} target="_blank" rel="noreferrer">{requirement.wcag.success_criteria}</a>
                                                                             : <span>{requirement.wcag.success_criteria}</span>
