@@ -104,7 +104,7 @@
                     {
                         "error_type": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
                         "description": "Lists must be marked up correctly, meaning they must not contain content elements other than li elements.",
-                        "fix": "wrap the two buttons with a list itme <li>",
+                        "fix": "wrap the two buttons with a list item <li>",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "MUST: Info and Relationships"
