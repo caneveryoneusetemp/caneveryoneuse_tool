@@ -15,7 +15,7 @@
                     {
                         "error_type": "2.1.1 Keyboard",
                         "description": "Content is not scrollable with the keyboard. Long content gets cut off.",
-                        "fix": "Make content of dialog focusable so it can be scrolled via keyboard. Suggestion: Add ad tabindex='0'",
+                        "fix": "Make content of dialog focusable so it can be scrolled via keyboard. Suggestion: Add tabindex='0'",
                         "wcag": {
                             "version": "2.2",
                             "success_criteria": "https://www.w3.org/TR/WCAG22/#keyboard"
