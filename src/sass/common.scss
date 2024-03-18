@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
+.container {
+    overflow: auto;
+}
+
 .component {
     &-card {
         border-radius: 20px;
