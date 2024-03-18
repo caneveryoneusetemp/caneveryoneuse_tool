@@ -56,7 +56,7 @@
             "name": "Table",
             "slug": "table",
             "Axe": {
-                "total_issues": 26,
+                "total_issues": 2,
                 "errors": [
                     {
                         "error_type": "Form elements must have labels",
@@ -84,9 +84,8 @@
             "name": "Alert/Notification",
             "slug": "alert",
             "Axe": {
-                "total_issues": 5,
-                "errors": [
-                ]
+                "total_issues": 0,
+                "errors": []
             },
             "preview_link": "https://tailwindui.com/components/application-ui/feedback/alerts"
         },
@@ -94,9 +93,8 @@
             "name": "Form",
             "slug": "form",
             "Axe": {
-                "total_issues": 6,
-                "errors": [
-                ]
+                "total_issues": 0,
+                "errors": []
             },
             "preview_link": "https://tailwindui.com/components/application-ui/forms/form-layouts"
         }
