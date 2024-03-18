@@ -7,7 +7,7 @@
             "name": "Dialog",
             "slug": "dialog",
             "Axe": {
-                "total_issues": 6,
+                "total_issues": 2,
                 "errors": [
                 ]
             },
@@ -39,7 +39,7 @@
             "name": "Selectmenu",
             "slug": "select-menu",
             "Axe": {
-                "total_issues": 4,
+                "total_issues": 1,
                 "errors": [
                     {
                         "error_type": "ARIA input fields must have an accessible name",
@@ -58,7 +58,7 @@
             "name": "Accordion",
             "slug": "accordion",
             "Axe": {
-                "total_issues": 2,
+                "total_issues": 1,
                 "errors": [
                     {
                         "error_type": "Certain ARIA roles must contain particular children",
