@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const Component = (props) => {
 
     const { selectedComponent, type } = props;
-    const { framework, component } = useParams();
+    const { framework } = useParams();
     const [errorCountTotal, setErrorCountTotal] = useState(0);
     const [errors, setErrors] = useState([]);
     const [requirements, setRequirements] = useState([]);
