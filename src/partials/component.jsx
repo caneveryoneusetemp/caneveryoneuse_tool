@@ -94,13 +94,13 @@ const Component = (props) => {
                         <h5 className="component-card-title">
                             <b>{errorCountTotal > 0 ? errorCountTotal : 'OK'}</b>
                             {errorCountTotal > 0 &&
-                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="view errors"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
+                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="view errors"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
                             }
                         </h5>
         
                         <div className="component-card-footer d-flex flex-column">
                             {selectedComponent.preview_link && selectedComponent.preview_link.length > 0 &&
-                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="open component example">Preview <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg></a>
+                                <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="open component example">Preview <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="2.5" strokeLinecap="square" strokeLinejoin="round"><g fill="none" fillRule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg></a>
                             }
         
                             { framework && !component && errorCountTotal > 0 &&
