@@ -130,7 +130,7 @@
                 "total_issues": 0,
                 "errors": []
             },
-            "preview_link": ""
+            "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
         },
         {
             "name": "Table",
@@ -139,7 +139,7 @@
                 "total_issues": 0,
                 "errors": []
             },
-            "preview_link": "https://get.foundation/building-blocks/blocks/switch-toggle-all-iframe.html"
+            "preview_link": "https://get.foundation/building-blocks/blocks/table-expand-iframe.html"
         },
         {
             "name": "Alert/Notification",
