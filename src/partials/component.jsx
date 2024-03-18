@@ -36,7 +36,7 @@ const Component = (props) => {
         return !!urlPattern.test(urlString);
     }
 
-    useEffect(() => { 
+    useEffect(() => {
 
         const errorCount = calculateErrors(selectedComponent);
 
@@ -44,7 +44,7 @@ const Component = (props) => {
 
     }, [selectedComponent]);
 
-    useEffect(() => { 
+    useEffect(() => {
 
         if ( type === 'sum' ) return;
 
@@ -64,7 +64,7 @@ const Component = (props) => {
         }
 
         if ( selectedComponent.manual_testing ) {
-            
+
             if ( selectedComponent.manual_testing.errors.length > 0 ) {
                 allErrors = allErrors.concat( selectedComponent.manual_testing.errors );
             }
@@ -72,7 +72,7 @@ const Component = (props) => {
             if ( selectedComponent.manual_testing.requirements && selectedComponent.manual_testing?.requirements.length > 0 ) {
                 allRequirements = allRequirements.concat( selectedComponent.manual_testing?.requirements );
             }
-            
+
         }
 
         setErrors( allErrors );
@@ -97,12 +97,12 @@ const Component = (props) => {
                                 <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="view errors"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#fa2c2c" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></a>
                             }
                         </h5>
-        
+
                         <div className="component-card-footer d-flex flex-column">
                             {selectedComponent.preview_link && selectedComponent.preview_link.length > 0 &&
                                 <a href={selectedComponent.preview_link} target="_blank" rel="noreferrer" aria-label="open component example">Preview <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="square" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg></a>
                             }
-        
+
                             { framework && !component && errorCountTotal > 0 &&
                                 <Link to={`/${framework}/${selectedComponent.slug}/`} className="btn btn-secondary">Check errors</Link>
                             }
@@ -124,24 +124,24 @@ const Component = (props) => {
                                         return(
                                             <div className="error-item border-bottom mb-4" key={i}>
                                                 <div className="row mb-2">
-                                                    <div className="col-4">
+                                                    <div className="col-12 col-md-4">
                                                         <span>Error Type: </span>
                                                     </div>
-                                                    <div className="col-8">
+                                                    <div className="col-12 col-md-8">
                                                         <span>{error.error_type}</span>
                                                     </div>
                                                 </div>
                                                 <div className="row mb-2">
-                                                    <div className="col-4">
+                                                    <div className="col-12 col-md-4">
                                                      <span>Error Details: </span>
                                                     </div>
-                                                    <div className="col-8">
+                                                    <div className="col-12 col-md-8">
                                                         <div dangerouslySetInnerHTML={{__html: error.description}}></div>
                                                     </div>
-                                                    
+
                                                 </div>
                                                 <div className="row mb-2">
-                                                    <div className="col-4">
+                                                    <div className="col-12 col-md-4">
                                                         <span>How to fix the error? </span>
                                                     </div>
                                                     <div className="col-8">
@@ -150,13 +150,13 @@ const Component = (props) => {
                                                 </div>
                                                 {error.wcag &&
                                                     <div className="row mb-2">
-                                                        <div className="col-4">
+                                                        <div className="col-12 col-md-4">
                                                             <span>WCAG Compliance information </span>
                                                         </div>
                                                         <div className="col-8">
                                                             {error.wcag.version &&
                                                                 <div className="row">
-                                                                    <div className="col-3">
+                                                                    <div className="col-12 col-md-3">
                                                                         <span>Version: </span>
                                                                     </div>
                                                                     <div className="col-9">
@@ -167,23 +167,23 @@ const Component = (props) => {
 
                                                             {error.wcag.success_criteria &&
                                                                 <div className="row">
-                                                                    <div className="col-3">
+                                                                    <div className="col-12 col-md-3">
                                                                         <span>Success Criteria </span>
                                                                     </div>
-                                                                    <div className="col-9">
-                                                                        { isValidUrl( error.wcag.success_criteria ) 
+                                                                    <div className="col-12 col-md-9">
+                                                                        { isValidUrl( error.wcag.success_criteria )
                                                                             ?  <a href={error.wcag.success_criteria} target="_blank" rel="noreferrer">{error.wcag.success_criteria}</a>
                                                                             : <span>{error.wcag.success_criteria}</span>
                                                                         }
-                                                                       
+
                                                                     </div>
                                                                 </div>
                                                             }
-                                                            
+
                                                         </div>
                                                     </div>
                                                 }
-                                                
+
                                             </div>
                                         );
                                     })}
@@ -216,7 +216,7 @@ const Component = (props) => {
                                                     <div className="col-8">
                                                         <div dangerouslySetInnerHTML={{__html: requirement.description}}></div>
                                                     </div>
-                                                    
+
                                                 </div>
                                                 <div className="row mb-2">
                                                     <div className="col-4">
@@ -249,15 +249,15 @@ const Component = (props) => {
                                                                         <span>Success Criteria </span>
                                                                     </div>
                                                                     <div className="col-9">
-                                                                        { isValidUrl( requirement.wcag.success_criteria ) 
+                                                                        { isValidUrl( requirement.wcag.success_criteria )
                                                                             ?  <a href={requirement.wcag.success_criteria} target="_blank" rel="noreferrer">{requirement.wcag.success_criteria}</a>
                                                                             : <span>{requirement.wcag.success_criteria}</span>
                                                                         }
-                                                                       
+
                                                                     </div>
                                                                 </div>
                                                             }
-                                                            
+
                                                         </div>
                                                     </div>
                                                 }
